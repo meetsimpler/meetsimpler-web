@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none';
+    script-src 'self';
+    connect-src 'self' https://bwwtoynfpuhtytoxbmol.supabase.co;
+    style-src 'self';
+    img-src 'self';
+    base-uri 'none';
+    form-action 'self'
+  ">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>MeetSimpler — Account sign-in</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="meetsimpler.png">
+</head>
+<body>
+  <header><a class="brand" href="./"><img class="brand-logo" src="meetsimpler.png" alt="" width="40" height="40"><span>MeetSimpler</span></a><nav aria-label="Main navigation"><a href="./">Home</a></nav></header>
+  <main class="account desktop-signin">
+    <h1>Connect your Windows app.</h1>
+    <p>Sign in to connect this Windows app to your MeetSimpler account.</p>
+    <p id="status" role="status" aria-live="polite">Loading secure sign-in…</p>
+    <section id="signin-form" class="card">
+      <h2>Log in</h2>
+      <p>Use Google or GitHub for a quick start, with no extra password to remember.</p>
+      <p>Continue only if you started this sign-in in MeetSimpler on your own computer.</p>
+      <p id="device"></p>
+      <label id="consent-row" class="consent-row"><input type="checkbox" id="consent" required aria-describedby="consent-error"><span class="consent-copy">I accept the <a href="legal/terms.html" target="_blank" rel="noopener">Terms</a> and acknowledge the <a href="legal/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>
+      <p id="consent-error" class="field-error" role="alert" hidden></p>
+      <div class="account-actions"><button id="google" type="button" disabled>Continue with Google</button><button id="github" type="button" disabled>Continue with GitHub</button></div>
+      <p>Use the same sign-in method as your existing MeetSimpler account.</p>
+      <p class="result-note">Need email sign-in? Return to the Windows app and choose Use email sign in.</p>
+      <h3>How sign-in works</h3>
+      <ol class="signin-steps">
+        <li>Accept the Terms and choose Google or GitHub above.</li>
+        <li>Sign in with your provider and approve the request. You will return to this page automatically.</li>
+        <li>Switch back to the Windows app when you see “Sign-in successful”. The app will check your account access.</li>
+      </ol>
+      <p class="result-note">Complete sign-in within five minutes. If the request expires, start again from the Windows app.</p>
+    </section>
+    <section id="result" class="card" hidden aria-labelledby="result-title">
+      <div id="result-icon" class="result-icon" aria-hidden="true"></div>
+      <h2 id="result-title" tabindex="-1"></h2>
+      <p id="result-next" class="result-next"></p>
+      <p id="result-note" class="result-note"></p>
+    </section>
+    <section class="card" aria-labelledby="access-title">
+      <h2 id="access-title">Subscription &amp; access</h2>
+      <h3>Free beta · $0</h3>
+      <p>One free plan. No payment details required.</p>
+      <p>Connect to activate or renew up to seven days of offline access while the free beta remains available. Account eligibility and required updates are checked by the app.</p>
+      <p>Cloud AI requires an internet connection and your provider's credentials; provider charges are separate.</p>
+      <a href="legal/subscriptions.html" target="_blank" rel="noopener">Read the subscription policy</a>
+    </section>
+    <section class="card" aria-labelledby="workspace-title">
+      <h2 id="workspace-title">Your meeting workspace</h2>
+      <p>Your recordings and meeting files stay in your selected folder in the Windows app. Signing in does not upload your meetings.</p>
+      <a href="account.html" target="_blank" rel="noopener">Manage account on web</a>
+    </section>
+    <p><a href="mailto:meetsimpler@gmail.com">Need help?</a></p>
+    <noscript><p>Enable JavaScript to sign in, then start sign-in again from the Windows app.</p></noscript>
+  </main>
+  <script type="module" src="signin.js"></script>
+<script type="module" src="i18n.js"></script></body>
+</html>

@@ -1,0 +1,47 @@
+# Public website files.
+/*
+!/.gitignore
+!/README.md
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/pages.yml
+!/website/
+/website/**
+!/website/**/
+!/website/**/*.html
+!/website/**/*.css
+!/website/**/*.js
+!/website/**/*.mjs
+!/website/**/*.json
+!/website/**/*.xml
+!/website/**/*.txt
+!/website/**/*.webmanifest
+!/website/**/*.png
+!/website/**/*.jpg
+!/website/**/*.jpeg
+!/website/**/*.gif
+!/website/**/*.webp
+!/website/**/*.svg
+!/website/**/*.ico
+!/website/**/*.avif
+!/website/**/*.woff
+!/website/**/*.woff2
+!/website/**/*.ttf
+!/website/**/*.otf
+
+# Public data files and content directories.
+/website/*.json
+!/website/config.json
+!/website/update.json
+/website/*/
+!/website/assets/
+!/website/legal/
+!/website/locales/
+!/website/vendor/
+
+# Hidden files remain excluded.
+**/.*
+!/.gitignore
+!/.github/
