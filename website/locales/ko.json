@@ -729,7 +729,7 @@
   "Multimodal summaries": "멀티모달 요약",
   "Name and organize meetings": "회의 이름 지정 및 정리",
   "Open Meeting context config and add selected screenshots, other images, PDFs or supporting notes.": "회의 컨텍스트 설정을 열고 선택한 스크린샷, 다른 이미지, PDF 또는 참고 노트를 추가하세요.",
-  "Open Settings → AI context settings. Enable Meeting context files for each summary type that should receive those files, then save your choices.": "설정 → AI 컨텍스트 설정을 여세요. 파일을 받을 각 요약 유형에 회의 컨텍스트 파일을 활성화한 후 저장하세요.",
+  "Open Settings → AI context settings and select Customize. Enable Meeting context files for each summary type that should receive those files, then select Save.": "설정 → AI 컨텍스트 설정을 열고 사용자 지정을 선택하세요. 파일을 받을 각 요약 유형에 회의 컨텍스트 파일을 활성화한 후 저장을 선택하세요.",
   "Open Visual sources. Select any combination of the whole desktop, available application windows and cameras, then select Confirm.": "시각 소스를 여세요. 전체 데스크톱, 사용 가능한 앱 창과 카메라를 원하는 조합으로 선택한 후 확인을 누르세요.",
   "Save changes, reduce clutter": "변화만 저장해 깔끔하게",
   "Screenshot shortcuts work while another app has focus. Change them in Screenshot settings if they conflict with another app. Visual source rows toggle with a single click.": "스크린샷 단축키는 다른 앱에 포커스가 있을 때도 작동합니다. 충돌하면 스크린샷 설정에서 바꾸세요. 시각 소스 행은 한 번 클릭하여 선택을 전환합니다.",

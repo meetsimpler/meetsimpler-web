@@ -729,7 +729,7 @@
   "Multimodal summaries": "マルチモーダル要約",
   "Name and organize meetings": "会議の命名と整理",
   "Open Meeting context config and add selected screenshots, other images, PDFs or supporting notes.": "「会議コンテキスト設定」を開き、選んだスクリーンショット、画像、PDF、参考メモを追加します。",
-  "Open Settings → AI context settings. Enable Meeting context files for each summary type that should receive those files, then save your choices.": "「設定 → AIコンテキスト設定」を開き、ファイルを使う要約の種類ごとに「会議コンテキストファイル」を有効にして保存します。",
+  "Open Settings → AI context settings and select Customize. Enable Meeting context files for each summary type that should receive those files, then select Save.": "「設定 → AIコンテキスト設定」を開き、「カスタマイズ」を選びます。ファイルを使う要約の種類ごとに「会議コンテキストファイル」を有効にし、「保存」を選びます。",
   "Open Visual sources. Select any combination of the whole desktop, available application windows and cameras, then select Confirm.": "「視覚ソース」を開き、デスクトップ全体、利用可能なアプリのウィンドウ、カメラを自由に組み合わせて選び、「確認」を押します。",
   "Save changes, reduce clutter": "変化を保存してすっきり整理",
   "Screenshot shortcuts work while another app has focus. Change them in Screenshot settings if they conflict with another app. Visual source rows toggle with a single click.": "スクリーンショットのショートカットは他のアプリを操作中でも使えます。競合する場合は設定で変更してください。視覚ソースの行はシングルクリックで切り替えます。",

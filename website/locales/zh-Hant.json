@@ -729,7 +729,7 @@
   "Multimodal summaries": "多模態摘要",
   "Name and organize meetings": "命名與整理會議",
   "Open Meeting context config and add selected screenshots, other images, PDFs or supporting notes.": "開啟「會議上下文設定」，新增選定截圖、其他圖片、PDF 或輔助筆記。",
-  "Open Settings → AI context settings. Enable Meeting context files for each summary type that should receive those files, then save your choices.": "開啟「設定 → AI 上下文設定」。為需要接收檔案的各類摘要啟用「會議上下文檔案」，然後儲存設定。",
+  "Open Settings → AI context settings and select Customize. Enable Meeting context files for each summary type that should receive those files, then select Save.": "開啟「設定 → AI 上下文設定」，選擇「自訂」。為需要接收檔案的各類摘要啟用「會議上下文檔案」，然後選擇「儲存」。",
   "Open Visual sources. Select any combination of the whole desktop, available application windows and cameras, then select Confirm.": "開啟「視覺來源」。可任意組合選擇整個桌面、可用應用程式視窗與攝影機，然後選擇「確認」。",
   "Save changes, reduce clutter": "儲存變化，減少雜亂",
   "Screenshot shortcuts work while another app has focus. Change them in Screenshot settings if they conflict with another app. Visual source rows toggle with a single click.": "截圖快捷鍵在其他應用程式取得焦點時也可使用。若與其他應用程式衝突，請在「截圖設定」中修改。視覺來源列按一下即可切換選擇。",
