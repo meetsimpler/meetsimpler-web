@@ -1,4 +1,5 @@
 import {request, timedFetch} from './http.js';
+import {validateAuthConfig} from './website-data.js';
 
 // One deadline per foreground operation. A timeout retires this page's client;
 // SDK retries may settle later, but cannot send requests or change its session.
@@ -65,12 +66,8 @@ export async function accessRequest(config, action, body, token, signal) {
 }
 
 export async function loadAuth(options, operations) {
-  const config = await operations.call(async () =>
-    (await request('config.json', {signal: operations.signal})).json());
-  if (!config.supabase?.url || !config.supabase?.publishableKey ||
-      config.supabase.publishableKey.includes('REPLACE')) {
-    throw new Error('Supabase configuration is not ready.');
-  }
+  const config = validateAuthConfig(await operations.call(async () =>
+    (await request('config.json', {signal: operations.signal})).json()));
   let AuthClient;
   try {
     ({AuthClient} = await operations.call(() =>

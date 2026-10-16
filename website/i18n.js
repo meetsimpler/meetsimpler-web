@@ -23,8 +23,9 @@ export function installMessages(messages, locale) {
       fields.push(part); seen.set(part, fields.length); return '([\\s\\S]*?)';
     }).join('');
     return {pattern: new RegExp('^' + pattern + '$'), source, fields,
+      prefix: parts[0].length,
       specificity: parts.filter(part => !/^\{\d+\}$/.test(part)).join('').length};
-  }).sort((a, b) => b.specificity - a.specificity);
+  }).sort((a, b) => b.prefix - a.prefix || b.specificity - a.specificity);
   catalogs.set(normalizeLanguage(locale), messages);
 }
 
@@ -38,7 +39,7 @@ export function translate(source, locale = currentLanguage) {
     const match = source.trim().match(pattern);
     if (match) return messages[template].replace(/\{\d+\}/g, field => {
       const value = match[fields.indexOf(field) + 1];
-      return template === '{0} | MeetSimpler' ? translate(value, locale) : value;
+      return translate(value, locale);
     });
   }
   return source;
