@@ -33,10 +33,10 @@
         <p>Audio and visual sources are selected independently. You can capture useful screen content without starting audio recording.</p>
         <ol>
           <li>Open Visual sources. Use the Screenshot column to select any combination of the whole desktop, available application windows and cameras, then select Confirm.</li>
-          <li>Select Capture sources for a screenshot of each checked source. Select Select area to drag a rectangle on screen; MeetSimpler minimizes during area selection.</li>
+          <li>Select Capture window for a screenshot of each checked source. Select Capture area to drag a rectangle on screen; MeetSimpler minimizes during area selection.</li>
           <li>For repeated capture, open Visual capture settings, choose the interval, then turn Auto screenshot: Off to Auto screenshot: On.</li>
           <li>Leave Save only when the image changes enabled to reduce repeated images. The default change threshold is 1%; lower values save smaller changes. Automatic and manual captures compare each source with its last saved image.</li>
-          <li>Select Open visual data to view saved screenshots under visual_data/screenshots inside the meeting folder, with a separate subfolder for each source.</li>
+          <li>Select Open visual capture data to view saved screenshots under visual_capture_data/screenshots inside the meeting folder, with a separate subfolder for each source.</li>
         </ol>
         <p>Capturing screenshots saves images locally. To use selected images in AI chat or summaries, add them through Meeting context config.</p>
       </section>
@@ -48,7 +48,7 @@
           <li>Choose Audio sources before starting. The selected microphone and output are mixed into every MP4. Select None in the audio source picker to record without sound.</li>
           <li>Select Record video to open the confirmation. Choose one listed source to preview; Start recording captures all listed sources. Use Change sources if needed, then select Start recording.</li>
           <li>Select Record video again to stop. Wait for Video recording saved before opening the files.</li>
-          <li>Select Open visual data. MP4 files are saved under visual_data/videos inside the meeting folder, with a separate subfolder for each source.</li>
+          <li>Select Open visual capture data. MP4 files are saved under visual_capture_data/videos inside the meeting folder, with a separate subfolder for each source.</li>
         </ol>
         <p>Video recording does not automatically add its frames to AI summaries.</p>
         <p>Audio and video source changes apply to the next recording. The current recording keeps the sources selected when it started.</p>
@@ -105,7 +105,7 @@
           </tbody>
         </table>
         <h3>Find saved screenshots and videos</h3>
-        <p>Select Open visual data from the dashboard. Screenshots are under visual_data/screenshots and videos are under visual_data/videos, each organized into source subfolders. Folders are created when captures are saved. Keep the entire visual_data folder with the meeting when backing up your records.</p>
+        <p>Select Open visual capture data from the dashboard. Screenshots are under visual_capture_data/screenshots and videos are under visual_capture_data/videos, each organized into source subfolders. Folders are created when captures are saved. Keep the entire visual_capture_data folder with the meeting when backing up your records.</p>
         <p>Existing captures remain in their original folders. New screenshots and videos use the category and source folders described above.</p>
         <h3>Retrieve a complete audio recording</h3>
         <ol>

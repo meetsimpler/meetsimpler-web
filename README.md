@@ -9,7 +9,7 @@ Record multiple desktop, application window and camera sources to separate
 local MP4 files with your selected microphone and output audio. Choose video
 sources independently from screenshot sources, preview the selection, and adjust
 resolution, frame rate and quality. Screenshots and videos are organized by source
-under visual_data/screenshots and visual_data/videos in each meeting folder.
+under visual_capture_data/screenshots and visual_capture_data/videos in each meeting folder.
 
 Screenshot change detection reduces repeated images. Keep records together
 locally, organize screenshots by source, and name meeting folders from their
