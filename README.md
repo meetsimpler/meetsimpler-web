@@ -1,8 +1,14 @@
 # MeetSimpler
 
 MeetSimpler is a Windows app for turning meetings, lectures, and audio or video
-recordings into transcripts and useful AI summaries. Capture live conversations,
-import recordings, and ask questions about what you heard.
+recordings into transcripts and useful AI summaries. Choose audio and visual
+sources, capture screenshots manually or on a timer, and combine transcripts
+with selected images and PDFs using a compatible AI model.
+
+Screenshot change detection reduces repeated images. Keep records together
+locally, organize screenshots by source, and name meeting folders from their
+transcript or with your own suffix. Configurable screenshot shortcuts, Escape
+and quick source selection help you work with fewer clicks.
 
 Speech recognition runs locally on your PC. AI chat and summaries use your chosen
 provider, with your own credentials; provider charges may apply.
