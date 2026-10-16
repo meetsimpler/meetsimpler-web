@@ -747,7 +747,7 @@
   "Open Visual sources. Use the Screenshot column to select any combination of the whole desktop, available application windows and cameras, then select Confirm.": "打开“视觉源”，在“截图”列中任意组合选择整个桌面、可用应用窗口和摄像头，然后选择“确认”。",
   "Record video": "录制视频",
   "Record video from your chosen source": "录制所选源的视频",
-  "Record your desktop, an application window or a camera to a local, silent MP4. Preview your source and choose resolution, frame rate and quality.": "将桌面、应用窗口或摄像头录制为本地无声 MP4。预览所选源，并选择分辨率、帧率和画质。",
+  "Record your desktop, an application window or a camera to a local MP4. Preview your source and choose resolution, frame rate and quality.": "将桌面、应用窗口或摄像头录制为本地 MP4。预览所选源，并选择分辨率、帧率和画质。",
   "Screenshot shortcuts work while another app has focus. Change them in Visual capture settings if they conflict with another app. In Visual sources, click the Screenshot checkbox or Record video column to set each selection.": "截图快捷键在其他应用获得焦点时也可使用。若与其他应用冲突，请在“视觉采集设置”中修改。在“视觉源”中，点击“截图”复选框或“录制视频”列分别设置。",
   "Select Open visual data from the dashboard. Screenshots are grouped by source under visual_data; videos are in visual_data/video_recordings. Keep the entire visual_data folder with the meeting when backing up your records.": "在仪表板选择“打开视觉数据”。截图按源分组保存在 visual_data 下，视频保存在 visual_data/video_recordings 中。备份记录时，请将整个 visual_data 文件夹与会议一起保留。",
   "Select Open visual data to view saved screenshots, grouped by source under visual_data inside the meeting folder.": "选择“打开视觉数据”查看保存的截图，截图按源分组保存在会议文件夹内的 visual_data 下。",
@@ -756,5 +756,5 @@
   "Select Record video: On to stop. Wait for Video recording saved before opening the file.": "选择“视频录制：开”停止录制。等待显示“视频录制已保存”后再打开文件。",
   "Select the focused visual source for video recording, then select Confirm.": "将当前焦点所在的视觉源选为视频录制源，然后选择“确认”。",
   "Toggle the focused audio source or screenshot checkbox in a source list.": "切换源列表中当前焦点所在的音频源或截图复选框。",
-  "Video files contain no audio. Configure audio sources and audio recording separately when you need sound. Video recording does not automatically add its frames to AI summaries.": "视频文件不含音频。需要声音时，请单独配置音频源和录音。视频录制不会自动将画面加入 AI 摘要。"
+  "Video recording does not automatically add its frames to AI summaries.": "视频录制不会自动将画面加入 AI 摘要。"
 }

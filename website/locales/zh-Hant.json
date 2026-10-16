@@ -747,7 +747,7 @@
   "Open Visual sources. Use the Screenshot column to select any combination of the whole desktop, available application windows and cameras, then select Confirm.": "開啟「視覺來源」，在「截圖」欄中任意組合選擇整個桌面、可用應用程式視窗與攝影機，然後選擇「確認」。",
   "Record video": "錄製影片",
   "Record video from your chosen source": "選擇來源錄製影片",
-  "Record your desktop, an application window or a camera to a local, silent MP4. Preview your source and choose resolution, frame rate and quality.": "將桌面、應用程式視窗或攝影機錄製為本機無聲 MP4。預覽所選來源，並選擇解析度、影格率與畫質。",
+  "Record your desktop, an application window or a camera to a local MP4. Preview your source and choose resolution, frame rate and quality.": "將桌面、應用程式視窗或攝影機錄製為本機 MP4。預覽所選來源，並選擇解析度、影格率與畫質。",
   "Screenshot shortcuts work while another app has focus. Change them in Visual capture settings if they conflict with another app. In Visual sources, click the Screenshot checkbox or Record video column to set each selection.": "截圖快捷鍵在其他應用程式取得焦點時也可使用。若與其他應用程式衝突，請在「視覺擷取設定」中修改。在「視覺來源」中，點選「截圖」核取方塊或「錄製影片」欄分別設定。",
   "Select Open visual data from the dashboard. Screenshots are grouped by source under visual_data; videos are in visual_data/video_recordings. Keep the entire visual_data folder with the meeting when backing up your records.": "在儀表板選擇「開啟視覺資料」。截圖依來源分組儲存在 visual_data 下，影片儲存在 visual_data/video_recordings 中。備份紀錄時，請將整個 visual_data 資料夾與會議一起保留。",
   "Select Open visual data to view saved screenshots, grouped by source under visual_data inside the meeting folder.": "選擇「開啟視覺資料」查看儲存的截圖，截圖依來源分組儲存在會議資料夾內的 visual_data 下。",
@@ -756,5 +756,5 @@
   "Select Record video: On to stop. Wait for Video recording saved before opening the file.": "選擇「影片錄製：開」停止錄製。等待顯示「影片錄製已儲存」後再開啟檔案。",
   "Select the focused visual source for video recording, then select Confirm.": "將目前焦點所在的視覺來源選為影片錄製來源，然後選擇「確認」。",
   "Toggle the focused audio source or screenshot checkbox in a source list.": "切換來源清單中目前焦點所在的音訊來源或截圖核取方塊。",
-  "Video files contain no audio. Configure audio sources and audio recording separately when you need sound. Video recording does not automatically add its frames to AI summaries.": "影片檔案不含音訊。需要聲音時，請另外設定音訊來源與錄音。影片錄製不會自動將畫面加入 AI 摘要。"
+  "Video recording does not automatically add its frames to AI summaries.": "影片錄製不會自動將畫面加入 AI 摘要。"
 }

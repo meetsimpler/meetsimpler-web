@@ -5,10 +5,10 @@ recordings into transcripts and useful AI summaries. Choose audio and visual
 sources, capture screenshots manually or on a timer, record video, and combine
 transcripts with selected images and PDFs using a compatible AI model.
 
-Record the desktop, an application window or a camera as a local, silent MP4.
+Record the desktop, an application window or a camera as a local MP4.
 Choose one video source independently from screenshot sources, preview it before
-recording, and adjust resolution, frame rate and quality. Audio is captured
-separately. Screenshots and videos stay together in the meeting visual data.
+recording, and adjust resolution, frame rate and quality. Screenshots and videos
+stay together in the meeting visual data.
 
 Screenshot change detection reduces repeated images. Keep records together
 locally, organize screenshots by source, and name meeting folders from their

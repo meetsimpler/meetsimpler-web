@@ -747,7 +747,7 @@
   "Open Visual sources. Use the Screenshot column to select any combination of the whole desktop, available application windows and cameras, then select Confirm.": "「視覚ソース」を開き、「スクリーンショット」列でデスクトップ全体、利用可能なアプリのウィンドウ、カメラを自由に組み合わせて選び、「確認」を押します。",
   "Record video": "動画を録画",
   "Record video from your chosen source": "選んだソースを動画に録画",
-  "Record your desktop, an application window or a camera to a local, silent MP4. Preview your source and choose resolution, frame rate and quality.": "デスクトップ、アプリのウィンドウ、カメラをローカルの無音MP4として録画。ソースをプレビューし、解像度、フレームレート、画質を選べます。",
+  "Record your desktop, an application window or a camera to a local MP4. Preview your source and choose resolution, frame rate and quality.": "デスクトップ、アプリのウィンドウ、カメラをローカルのMP4として録画。ソースをプレビューし、解像度、フレームレート、画質を選べます。",
   "Screenshot shortcuts work while another app has focus. Change them in Visual capture settings if they conflict with another app. In Visual sources, click the Screenshot checkbox or Record video column to set each selection.": "スクリーンショットのショートカットは他のアプリを操作中でも使えます。競合する場合はビジュアルキャプチャ設定で変更してください。視覚ソースでは、画像用チェックボックスと動画録画列でそれぞれ選択します。",
   "Select Open visual data from the dashboard. Screenshots are grouped by source under visual_data; videos are in visual_data/video_recordings. Keep the entire visual_data folder with the meeting when backing up your records.": "ダッシュボードの「ビジュアルデータを開く」を選びます。画像はvisual_data内にソース別で、動画はvisual_data/video_recordingsに保存されます。バックアップ時にはvisual_data全体を会議記録と一緒に保管してください。",
   "Select Open visual data to view saved screenshots, grouped by source under visual_data inside the meeting folder.": "「ビジュアルデータを開く」で、会議フォルダーのvisual_data内にソース別で保存した画像を確認できます。",
@@ -756,5 +756,5 @@
   "Select Record video: On to stop. Wait for Video recording saved before opening the file.": "「動画録画：オン」で停止します。「録画を保存しました」と表示されてからファイルを開いてください。",
   "Select the focused visual source for video recording, then select Confirm.": "フォーカス中の視覚ソースを動画用に選び、「確認」で適用します。",
   "Toggle the focused audio source or screenshot checkbox in a source list.": "ソース一覧で、フォーカス中の音声ソースまたは画像用チェックボックスを切り替えます。",
-  "Video files contain no audio. Configure audio sources and audio recording separately when you need sound. Video recording does not automatically add its frames to AI summaries.": "動画ファイルには音声が含まれません。音声が必要な場合は、音声ソースと録音を別に設定してください。録画した映像がAI要約に自動で含まれることはありません。"
+  "Video recording does not automatically add its frames to AI summaries.": "録画した映像がAI要約に自動で含まれることはありません。"
 }
