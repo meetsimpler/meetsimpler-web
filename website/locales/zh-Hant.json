@@ -379,7 +379,6 @@
   "One free plan. No payment details required.": "一個免費方案，無需付款資訊。",
   "Online call": "線上通話",
   "Open": "開啟",
-  "Open AI chat": "開啟 AI 聊天",
   "Open Meeting context config and add selected screenshots, other images, PDFs or supporting notes.": "開啟「會議上下文設定」，新增選定截圖、其他圖片、PDF 或輔助筆記。",
   "Open Settings → AI context settings and select Customize. Enable Meeting context files for each summary type that should receive those files, then select Save.": "開啟「設定 → AI 上下文設定」，選擇「自訂」。為需要接收檔案的各類摘要啟用「會議上下文檔案」，然後選擇「儲存」。",
   "Open Settings → AI provider config and run Test connection. Check the API base URL, key and model identifier. Review any provider access, credit or rate-limit error shown by the app. Save the corrected configuration and retry. If a final summary says the meeting is still being saved, wait for saving to finish first.": "開啟“設定 → AI 服務配置”，執行“測試連線”。檢查 API 基礎網址、金鑰和模型標識。檢視應用報告的服務商許可權、額度或限流錯誤。儲存修正配置後重試。如最終摘要提示會議仍在儲存，請先等待儲存完成。",
@@ -606,7 +605,6 @@
   "Use End meeting to finish capture.": "使用“結束會議”完成採集。",
   "Use GPU with CUDA": "使用 GPU 和 CUDA",
   "Use Google or GitHub for a quick start, with no extra password to remember.": "使用 Google 或 GitHub 快速開始，無需記住額外的密碼。",
-  "Use Open meeting folder from the dashboard or AI chat. Look in your selected meeting parent folder for the individual timestamped meeting folder. For an older meeting, use Load meeting folder and select that individual folder.": "從儀表板或 AI 聊天使用“開啟會議資料夾”。在所選會議父資料夾中查詢獨立的時間戳會議資料夾。檢視較早的會議時，使用“載入會議資料夾”選擇該獨立資料夾。",
   "Use Rename meeting by transcript to generate descriptive folder suffixes from the confirmed transcript. Choose a suggestion, edit it if needed, then select Confirm and rename. You can also enter a custom suffix without an AI request.": "使用「依轉寫重新命名會議」，從已確認轉寫產生描述性資料夾後綴。選擇建議、視需要編輯，然後選擇「確認並重新命名」。也可直接輸入自訂後綴，無需 AI 請求。",
   "Use a password with at least 6 characters.": "密碼至少需要 6 個字元。",
   "Use an AI provider and model that support the images or PDFs you include. Generate a partial or final summary, or let configured automatic summaries run.": "使用支援所含圖片或 PDF 的 AI 供應商與模型。產生部分或最終摘要，或執行已設定的自動摘要。",
@@ -623,7 +621,6 @@
   "Videos and online courses": "影片與線上課程",
   "View Windows downloads": "檢視 Windows 下載",
   "Wait for the export to finish, then open the exported WAV file with your audio player. The export contains only audio that was actually saved; periods when audio saving was off cannot be recovered from the transcript.": "等待匯出完成，然後使用音訊播放器開啟匯出的 WAV 檔案。匯出內容僅包含實際儲存的音訊；音訊儲存關閉期間的聲音無法從轉錄文字中還原。",
-  "Wait for the records to load. Review Live Transcript, then select Open AI chat to read the latest saved chat session. Select Open meeting folder from Meeting Control or AI chat to see the saved audio, transcript and summary files in File Explorer.": "等待記錄載入完成。在「實時轉錄」中查看轉錄，然後選擇「開啟 AI 聊天」，閱讀最近儲存的聊天工作階段。在「會議控制」或 AI 聊天中選擇「開啟會議資料夾」，即可在檔案總管中查看儲存的音訊、轉錄和摘要檔案。",
   "Warranty, liability and termination": "保證、責任和終止",
   "Watch": "檢視",
   "We may suspend access for security, abuse, invalid entitlements or legal requirements. Contact support to request review, close your account, or withdraw consent. Expired or suspended access may persist offline until an existing permit expires. Uninstalling does not delete your Supabase account or meeting folder. Account deletion requests require proportionate identity verification.": "我們可能因安全、濫用、無效使用許可權或法律要求暫停訪問。您可聯絡支援申請複核、關閉賬戶或撤回同意。過期或暫停的許可權可能在離線時持續到現有許可證到期。解除安裝不會刪除 Supabase 賬戶或會議資料夾。賬戶刪除請求須進行適度身份核驗。",
@@ -789,5 +786,7 @@
   "This bilingual example uses sample translations. Automatic translation is paused and no AI request was sent. Translate selected text and Translate all place their results in the selected-text column.": "此雙語範例使用示範翻譯。自動翻譯已暫停，未傳送任何 AI 請求。「翻譯選取文字」與「翻譯全部」的結果顯示於選取文字欄。",
   "MeetSimpler Live translation window with sample confirmed speech, translated text, a selected-word translation and paused automatic translation controls": "MeetSimpler 即時翻譯視窗，顯示範例已確認語音、翻譯文字、選取單字的翻譯與已暫停的自動翻譯控制項",
   "Live translation with sample bilingual content. Select the image to view it at full size.": "即時翻譯與雙語範例內容。選取圖片可查看完整尺寸。",
-  "Meeting folder": "會議資料夾"
+  "Meeting folder": "會議資料夾",
+  "Wait for the records to load. Review Live Transcript, then select AI chat to read the latest saved chat session. Select Meeting folder in Meeting Control, or Open meeting folder in AI chat, to see the saved audio, transcript and summary files in File Explorer.": "等待記錄載入完成。在「實時轉錄」中查看轉錄，然後選擇「AI 聊天」，閱讀最近儲存的聊天工作階段。在「會議控制」中選擇「會議資料夾」，或在 AI 聊天中選擇「開啟會議資料夾」，即可在檔案總管中查看儲存的音訊、轉錄和摘要檔案。",
+  "Select Meeting folder on the dashboard, or Open meeting folder in AI chat. Look in your selected meeting parent folder for the individual timestamped meeting folder. For an older meeting, use Load meeting folder and select that individual folder.": "在儀表板上選擇「會議資料夾」，或在 AI 聊天中選擇「開啟會議資料夾」。在所選會議父資料夾中尋找獨立的時間戳記會議資料夾。檢視較早的會議時，使用「載入會議資料夾」選擇該獨立資料夾。"
 }

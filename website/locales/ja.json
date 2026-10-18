@@ -379,7 +379,6 @@
   "One free plan. No payment details required.": "1つの無料プラン。支払いの詳細は必要ありません。",
   "Online call": "オンライン通話",
   "Open": "開く",
-  "Open AI chat": "AIチャットを開く",
   "Open Meeting context config and add selected screenshots, other images, PDFs or supporting notes.": "「会議コンテキスト設定」を開き、選んだスクリーンショット、画像、PDF、参考メモを追加します。",
   "Open Settings → AI context settings and select Customize. Enable Meeting context files for each summary type that should receive those files, then select Save.": "「設定 → AIコンテキスト設定」を開き、「カスタマイズ」を選びます。ファイルを使う要約の種類ごとに「会議コンテキストファイル」を有効にし、「保存」を選びます。",
   "Open Settings → AI provider config and run Test connection. Check the API base URL, key and model identifier. Review any provider access, credit or rate-limit error shown by the app. Save the corrected configuration and retry. If a final summary says the meeting is still being saved, wait for saving to finish first.": "[設定] → [AI プロバイダー構成] を開き、[テスト接続] を実行します。 API ベース URL、キー、モデル識別子を確認してください。アプリによって表示されるプロバイダーのアクセス、クレジット、またはレート制限のエラーを確認します。修正した構成を保存し、再試行します。最終的な概要に、会議がまだ保存中であることが示されている場合は、まず保存が完了するまで待ちます。",
@@ -606,7 +605,6 @@
   "Use End meeting to finish capture.": "キャプチャを終了するには、「会議の終了」を使用します。",
   "Use GPU with CUDA": "GPU を CUDA と一緒に使用する",
   "Use Google or GitHub for a quick start, with no extra password to remember.": "Google または GitHub ですぐに始められます。別のパスワードを覚える必要はありません。",
-  "Use Open meeting folder from the dashboard or AI chat. Look in your selected meeting parent folder for the individual timestamped meeting folder. For an older meeting, use Load meeting folder and select that individual folder.": "ダッシュボードまたは AI チャットから会議フォルダーを開くを使用します。選択した会議の親フォルダーで、タイムスタンプが付いている個々の会議フォルダーを探します。古い会議の場合は、[会議フォルダーの読み込み] を使用して、その個別のフォルダーを選択します。",
   "Use Rename meeting by transcript to generate descriptive folder suffixes from the confirmed transcript. Choose a suggestion, edit it if needed, then select Confirm and rename. You can also enter a custom suffix without an AI request.": "「文字起こしから会議名を変更」で、確定した文字起こしからフォルダー名の接尾辞を生成します。候補を選んで必要に応じて編集し、「確認して変更」を押します。AIを使わず手動入力もできます。",
   "Use a password with at least 6 characters.": "6 文字以上のパスワードを使用してください。",
   "Use an AI provider and model that support the images or PDFs you include. Generate a partial or final summary, or let configured automatic summaries run.": "含める画像やPDFに対応したAIプロバイダーとモデルを使います。部分要約や最終要約を生成するか、設定した自動要約を実行します。",
@@ -623,7 +621,6 @@
   "Videos and online courses": "動画・オンライン講座",
   "View Windows downloads": "Windows ダウンロードを表示",
   "Wait for the export to finish, then open the exported WAV file with your audio player. The export contains only audio that was actually saved; periods when audio saving was off cannot be recovered from the transcript.": "エクスポートが完了したら、音声プレーヤーでWAVファイルを開きます。エクスポートには実際に保存された音声のみが含まれます。音声保存がオフだった期間の音声は、文字起こしから復元できません。",
-  "Wait for the records to load. Review Live Transcript, then select Open AI chat to read the latest saved chat session. Select Open meeting folder from Meeting Control or AI chat to see the saved audio, transcript and summary files in File Explorer.": "記録の読み込みが完了するまで待ちます。「ライブ文字起こし」を確認し、「AIチャットを開く」を選択して、最後に保存されたチャットセッションを読みます。会議制御またはAIチャットで「会議フォルダーを開く」を選択すると、エクスプローラーで保存済みの音声、文字起こし、要約ファイルを確認できます。",
   "Warranty, liability and termination": "保証、責任、終了",
   "Watch": "見る",
   "We may suspend access for security, abuse, invalid entitlements or legal requirements. Contact support to request review, close your account, or withdraw consent. Expired or suspended access may persist offline until an existing permit expires. Uninstalling does not delete your Supabase account or meeting folder. Account deletion requests require proportionate identity verification.": "当社は、セキュリティ、悪用、無効な資格、または法的要件のためにアクセスを一時停止する場合があります。レビューをリクエストするか、アカウントを閉鎖するか、同意を撤回するには、サポートに連絡してください。期限切れまたは一時停止されたアクセスは、既存の許可が期限切れになるまでオフラインで存続する可能性があります。アンインストールしても、Supabase アカウントや会議フォルダーは削除されません。アカウント削除リクエストには相応の本人確認が必要です。",
@@ -789,5 +786,7 @@
   "This bilingual example uses sample translations. Automatic translation is paused and no AI request was sent. Translate selected text and Translate all place their results in the selected-text column.": "2 言語の例にはサンプルの翻訳を使っています。自動翻訳は一時停止中で、AI リクエストは送信していません。「選択したテキストを翻訳」と「すべて翻訳」の結果は、選択テキストの列に表示されます。",
   "MeetSimpler Live translation window with sample confirmed speech, translated text, a selected-word translation and paused automatic translation controls": "確定した発話、翻訳文、選択した単語の翻訳、自動翻訳の一時停止状態を表示した MeetSimpler のリアルタイム翻訳画面",
   "Live translation with sample bilingual content. Select the image to view it at full size.": "2 言語のサンプルを表示したリアルタイム翻訳画面です。画像を選択すると原寸で表示できます。",
-  "Meeting folder": "会議フォルダー"
+  "Meeting folder": "会議フォルダー",
+  "Wait for the records to load. Review Live Transcript, then select AI chat to read the latest saved chat session. Select Meeting folder in Meeting Control, or Open meeting folder in AI chat, to see the saved audio, transcript and summary files in File Explorer.": "記録の読み込みが完了するまで待ちます。「ライブ文字起こし」を確認し、「AIチャット」を選択して、最後に保存されたチャットセッションを読みます。会議制御で「会議フォルダー」を選択するか、AIチャットで「会議フォルダーを開く」を選択すると、エクスプローラーで保存済みの音声、文字起こし、要約ファイルを確認できます。",
+  "Select Meeting folder on the dashboard, or Open meeting folder in AI chat. Look in your selected meeting parent folder for the individual timestamped meeting folder. For an older meeting, use Load meeting folder and select that individual folder.": "ダッシュボードで「会議フォルダー」を選択するか、AIチャットで「会議フォルダーを開く」を選択します。選択した会議の親フォルダーで、タイムスタンプが付いた個々の会議フォルダーを探します。以前の会議の場合は、「会議フォルダーの読み込み」を使用して、その個別のフォルダーを選択します。"
 }
