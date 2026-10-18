@@ -101,6 +101,13 @@ function startTranslation(document, storage, catalogLoader) {
       }
       originalAttributes.set(element, records);
     }
+    for (const snapshot of document.querySelectorAll('img[data-localized-snapshot]')) {
+      const source = snapshot.dataset.localizedSnapshot;
+      const path = currentLanguage === 'en' ? source : source.replace(/\.webp$/, `.${currentLanguage}.webp`);
+      if (snapshot.getAttribute('src') !== path) snapshot.setAttribute('src', path);
+      const link = snapshot.closest('a');
+      if (link && link.getAttribute('href') !== path) link.setAttribute('href', path);
+    }
     document.documentElement.lang = htmlLanguage(currentLanguage);
     observer.observe(document.documentElement, {subtree: true, childList: true, characterData: true,
       attributes: true, attributeFilter: ['alt', 'title', 'placeholder', 'aria-label', 'content']});
