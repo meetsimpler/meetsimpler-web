@@ -16,10 +16,12 @@ locally, organize screenshots by source, and name meeting folders from their
 transcript or with your own suffix. Configurable screenshot shortcuts, Escape
 and quick source selection help you work with fewer clicks.
 
-Follow new confirmed speech with automatic AI translation, or translate selected
-text or the full transcript on demand. Choose a target language, including a
-custom language name, and reopen saved translation history with the meeting.
-Automatic translation starts paused so you control when requests begin.
+Translate a live or saved transcript with automatic AI translation, or translate
+selected text or the full transcript on demand. Choose a target language, including
+a custom language name. Progress is saved separately for each target: a new target
+can translate existing confirmed speech, and returning to an earlier target resumes
+its progress. Reopen saved translation history with the meeting. Automatic
+translation starts paused in a new translation window so you control requests.
 
 Speech recognition runs locally on your PC. AI translation, chat and summaries use
 your chosen provider, with your own credentials; provider charges may apply.
