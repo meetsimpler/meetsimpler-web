@@ -1,9 +1,10 @@
 import {loadAuth, authData, authErrorMessage, createAuthOperations} from './auth-client.js';
-import {byId, showAuthResult} from './auth-view.js';
+import {byId, showAuthResult, watchFieldValidation} from './auth-view.js';
 
 const status = byId('status');
 const operations = createAuthOperations();
 const button = byId('save');
+watchFieldValidation('password', 'Enter your password.', 'Use a password with at least 6 characters.');
 const params = new URLSearchParams(location.hash.slice(1));
 history.replaceState(null, '', location.pathname);
 

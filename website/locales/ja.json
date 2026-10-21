@@ -684,7 +684,6 @@
   "in the sidebar, then ask for study notes, key ideas or explanations. Default summary formats focus on meetings; AI chat and custom prompts let you request another format.": "サイドバーで両方を有効にしてから、学習ノート、要点、解説を依頼します。標準の要約は会議向けですが、AIチャットやカスタムプロンプトで他の形式を依頼できます。",
   "is a separate AI action. You can retain a transcript even if an AI request fails and retry the summary once the provider connection is working.": "は別の AI アクションです。 AI リクエストが失敗した場合でも文字起こしを保持し、プロバイダー接続が機能するようになったら概要を再試行できます。",
   "is enabled. Select": "が有効になっていることを確認します。必要に応じて",
-  "later.": "後で。",
   "main button": "メインボタン",
   "meeting recordings and downloaded speech models can take substantial space.": "会議の録音やダウンロードされた音声モデルは、かなりのスペースを必要とする場合があります。",
   "needed for AI chat and summaries. Local speech recognition uses an installed speech model separately.": "AI チャットや要約に必要です。ローカル音声認識は、インストールされた音声モデルを別途使用します。",

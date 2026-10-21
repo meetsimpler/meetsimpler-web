@@ -684,7 +684,6 @@
   "in the sidebar, then ask for study notes, key ideas or explanations. Default summary formats focus on meetings; AI chat and custom prompts let you request another format.": "在侧栏中启用这两个选项后，即可请求学习笔记、关键观点或解释。默认摘要格式侧重会议；AI 聊天和自定义提示词可用于请求其他格式。",
   "is a separate AI action. You can retain a transcript even if an AI request fails and retry the summary once the provider connection is working.": "是独立的 AI 操作。即使 AI 请求失败也可保留转录，并在服务商连接恢复后重试摘要。",
   "is enabled. Select": "已启用。如需启用转录上下文，请选择",
-  "later.": "，稍后再调整。",
   "main button": "主按钮",
   "meeting recordings and downloaded speech models can take substantial space.": "会议录音和下载的语音模型可能占用较多空间。",
   "needed for AI chat and summaries. Local speech recognition uses an installed speech model separately.": "AI 聊天和摘要需要使用。本地语音识别单独使用已安装的语音模型。",

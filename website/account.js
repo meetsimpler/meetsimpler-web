@@ -9,6 +9,10 @@ const accountUrl = new URL('account.html', location.href).href.split(/[?#]/)[0];
 watchFieldValidation('email', 'Enter your email address.', 'Enter a valid email address.');
 watchFieldValidation('password', 'Enter your password.', 'Use a password with at least 6 characters.');
 watchFieldValidation('consent', 'Please accept the Terms first.');
+for (const id of ['current-password', 'new-password', 'confirm-password']) {
+  watchFieldValidation(id, 'Enter your password.', 'Use a password with at least 6 characters.');
+}
+watchFieldValidation('delete-confirmation', 'Type DELETE to confirm permanent account deletion.');
 function controls(disabled) {
   document.querySelectorAll('main button').forEach(button => {button.disabled = disabled;});
 }
@@ -16,6 +20,7 @@ function showDeletionConfirmation(show) {
   byId('delete-account').hidden = !show;
   byId('show-delete-account').hidden = show;
   byId('delete-confirmation').value = '';
+  clearFieldError('delete-confirmation');
 }
 function setAuthMode(signUp) {
   for (const id of ['email', 'password', 'consent']) clearFieldError(id);
@@ -36,7 +41,9 @@ function render(nextUser) {
   byId('account-email').textContent = user?.email || '';
   byId('account-providers').textContent = user?.identities?.map(identity => identity.provider).join(', ') || '';
   if (changed) {
-    document.querySelectorAll('input[type=password]').forEach(input => {input.value = '';});
+    document.querySelectorAll('input[type=password]').forEach(input => {
+      input.value = ''; clearFieldError(input.id);
+    });
     showDeletionConfirmation(false);
   }
 }
@@ -130,7 +137,9 @@ byId('change-password').onsubmit = event => {
     if (password !== byId('confirm-password').value) throw new Error('The new passwords do not match.');
     authData(await call(() => auth.signInWithPassword({email: user.email, password: byId('current-password').value})));
     authData(await call(() => auth.updateUser({password})));
-    byId('change-password').reset(); status.textContent = 'Your password has been changed.';
+    byId('change-password').reset();
+    for (const id of ['current-password', 'new-password', 'confirm-password']) clearFieldError(id);
+    status.textContent = 'Your password has been changed.';
   });
 };
 try {
