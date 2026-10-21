@@ -11,7 +11,8 @@ sources independently from screenshot sources, preview the selection, and adjust
 resolution, frame rate and quality. Screenshots and videos are organized by source
 under visual_capture_data/screenshots and visual_capture_data/videos in each meeting folder.
 
-Screenshot change detection reduces repeated images. Keep records together
+Automatic screenshot change detection reduces repeated images; manual captures
+always save. Keep records together
 locally, organize screenshots by source, and name meeting folders from their
 transcript or with your own suffix. Configurable screenshot shortcuts, Escape
 and quick source selection help you work with fewer clicks.
