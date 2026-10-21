@@ -54,6 +54,25 @@ export function authData(result) {
   return result.data;
 }
 
+const authMessages = {
+  invalid_credentials: 'Email or password is incorrect. Check your details and try again.',
+  email_not_confirmed: 'Confirm your email using the link in your inbox, then log in.',
+  weak_password: 'Choose a stronger password that meets the password requirements.',
+  same_password: 'Choose a password different from your current password.',
+  user_already_exists: 'An account with these details already exists. Log in or reset your password.',
+  over_request_rate_limit: 'Too many attempts. Wait a few minutes and try again.',
+  over_email_send_rate_limit: 'Too many emails requested. Wait a few minutes before requesting another email.',
+  otp_expired: 'This sign-in link has expired or has already been used. Request a new link.',
+};
+
+export function authErrorMessage(error, fallback) {
+  if (Object.hasOwn(authMessages, error?.code)) return authMessages[error.code];
+  if (error?.status === 429) return authMessages.over_request_rate_limit;
+  if (error?.status >= 500) return 'The service is unavailable. Please try again.';
+  if (error?.name === 'AuthRetryableFetchError') return 'Check your internet connection and try again.';
+  return error?.message || fallback;
+}
+
 export async function accessRequest(config, action, body, token, signal) {
   const response = await timedFetch(config.apiBase.replace(/\/$/, '') + '/' + action, {
     method: 'POST', headers: {'Content-Type': 'application/json',

@@ -1,5 +1,5 @@
 {
   "version": "0.1",
-  "download_url": "https://github.com/meetsimpler/meetsimpler-releases/releases",
-  "notes": "MeetSimpler Beta for Windows x64. Windows release downloads will appear on the GitHub Releases page when published."
+  "download_url": "https://github.com/meetsimpler/meetsimpler-releases/releases/download/v0.1/MeetSimpler-v0.1-windows-x64-installer.exe",
+  "notes": "MeetSimpler Beta for Windows x64. Install with the Windows installer, or choose the portable ZIP from GitHub Releases."
 }

@@ -1,4 +1,4 @@
-import {loadAuth, authData, providers, callbackError, accessRequest, createAuthOperations} from './auth-client.js';
+import {loadAuth, authData, authErrorMessage, providers, callbackError, accessRequest, createAuthOperations} from './auth-client.js';
 import {byId, clearFieldError, watchFieldValidation} from './auth-view.js';
 
 const status = byId('status');
@@ -46,7 +46,7 @@ async function run(action) {
   try {await operations.run(action);}
   catch (error) {
     if (operations.stopped) stopAuth();
-    status.textContent = error.message || 'Unable to complete this request. Please try again.';
+    status.textContent = authErrorMessage(error, 'Unable to complete this request. Please try again.');
   }
   finally {busy = false; controls(!ready);}
 }
@@ -162,6 +162,6 @@ try {
 } catch (error) {
   stopAuth();
   history.replaceState(null, '', location.pathname);
-  status.textContent = (error.message || 'Account could not load.') + (operations.stopped ? '' : ' Reload this page to try again.');
+  status.textContent = authErrorMessage(error, 'Account could not load.') + (operations.stopped ? '' : ' Reload this page to try again.');
   controls(true);
 }

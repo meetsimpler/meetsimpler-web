@@ -1,4 +1,4 @@
-import {loadAuth, authData, createAuthOperations} from './auth-client.js';
+import {loadAuth, authData, authErrorMessage, createAuthOperations} from './auth-client.js';
 import {byId, showAuthResult} from './auth-view.js';
 
 const status = byId('status');
@@ -42,7 +42,7 @@ try {
       button.disabled = operations.stopped;
       if (operations.stopped) byId('reset-form').hidden = true;
       showResult(false, 'Password could not be changed. ' +
-        (error.message || 'Check the password policy or request a new link.'));
+        authErrorMessage(error, 'Check the password policy or request a new link.'));
       return;
     }
     byId('password').value = '';
@@ -54,5 +54,5 @@ try {
   };
 } catch (error) {
   byId('reset-form').hidden = true;
-  showResult(false, error.message || 'Your recovery link could not be verified. Request a new link from the login page.');
+  showResult(false, authErrorMessage(error, 'Your recovery link could not be verified. Request a new link from the login page.'));
 }

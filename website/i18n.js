@@ -47,6 +47,7 @@ export function translate(source, locale = currentLanguage) {
 
 function startTranslation(document, storage, catalogLoader) {
   const originalText = new WeakMap(), originalAttributes = new WeakMap();
+  const richText = new WeakMap();
   let requested = 'en';
   const loading = new Map();
   try {requested = normalizeLanguage(storage.getItem(storageKey));} catch (_) { /* Browser storage is optional. */ }
@@ -74,11 +75,30 @@ function startTranslation(document, storage, catalogLoader) {
       else link.removeAttribute('aria-current');
     }
   }
-  const excluded = node => node.parentElement?.closest('script, style, code, pre, [data-i18n-ignore]');
+  const excluded = node => node.parentElement?.closest('script, style, code, pre, [data-i18n-ignore], [data-i18n-template]');
   const observer = new MutationObserver(render);
   function render() {
     observer.disconnect();
     heading.textContent = translate('Language selection:');
+    // Translate whole sentences so each language can place linked terms naturally.
+    for (const element of document.querySelectorAll('[data-i18n-template]')) {
+      let record = richText.get(element);
+      if (!record) {
+        record = {slots: new Map(Array.from(element.querySelectorAll('[data-i18n-slot]'), node =>
+          [node.dataset.i18nSlot, {node, source: node.textContent}]))};
+        richText.set(element, record);
+      }
+      if (record.language === currentLanguage) continue;
+      const parts = translate(element.dataset.i18nTemplate).split(/(\{\d+\})/);
+      element.replaceChildren(...parts.map(part => {
+        const slot = part.match(/^\{(\d+)\}$/);
+        if (!slot) return document.createTextNode(part);
+        const {node, source} = record.slots.get(slot[1]);
+        node.textContent = translate(source);
+        return node;
+      }));
+      record.language = currentLanguage;
+    }
     const walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
     while (walker.nextNode()) {
       const node = walker.currentNode;

@@ -1,4 +1,4 @@
-import {loadAuth, authData, providers, callbackError, accessRequest, createAuthOperations} from './auth-client.js';
+import {loadAuth, authData, authErrorMessage, providers, callbackError, accessRequest, createAuthOperations} from './auth-client.js';
 import {showAuthResult, watchFieldValidation} from './auth-view.js';
 const status=document.getElementById('status');
 const operations=createAuthOperations();
@@ -84,4 +84,4 @@ try {
       }
     }
   });
-} catch(error) {clearBrowserSession();disableButtons(true);showResult(false,error.message || 'Unable to connect your app. Please start sign-in again.');}
+} catch(error) {clearBrowserSession();disableButtons(true);showResult(false,authErrorMessage(error, 'Unable to connect your app. Please start sign-in again.'));}
