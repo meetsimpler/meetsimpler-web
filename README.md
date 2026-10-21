@@ -16,12 +16,16 @@ locally, organize screenshots by source, and name meeting folders from their
 transcript or with your own suffix. Configurable screenshot shortcuts, Escape
 and quick source selection help you work with fewer clicks.
 
-Translate a live or saved transcript with automatic AI translation, or translate
-selected text or the full transcript on demand. Choose a target language, including
-a custom language name. Progress is saved separately for each target: a new target
-can translate existing confirmed speech, and returning to an earlier target resumes
-its progress. Reopen saved translation history with the meeting. Automatic
-translation starts paused in a new translation window so you control requests.
+The Analysis workspace combines live translation and chunk summaries with
+selective analysis of highlighted text, a time range or the full transcript.
+Choose a target language and enable Summary, Translation or both. Fold blocks,
+inspect their Source, or use Update to regenerate a result. Live analysis starts
+paused so you control when requests begin.
+
+Timed summaries in the main window follow each new time span. Timed and chunk
+summaries can use earlier blocks and a running memory for continuity. Review the
+memory and its evidence ranges, and edit it when needed. Selection menus can send
+text or a whole folded block to AI chat for explanations or summaries.
 
 Speech recognition runs locally on your PC. AI translation, chat and summaries use
 your chosen provider, with your own credentials; provider charges may apply.
