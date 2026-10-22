@@ -97,6 +97,8 @@
           <li>Leave Save only when the image changes enabled to reduce repeated automatic screenshots. The default change threshold is 10%; lower values save smaller changes. Automatic capture compares each source with its last saved image. Manual captures always save.</li>
           <li>Select Capture folder to view saved screenshots under visual_capture_data/screenshots inside the meeting folder, with a separate subfolder for each source.</li>
         </ol>
+        <p>When a selected window closes or another screenshot source fails, it is removed from the screenshot selection. Automatic capture continues with the remaining sources. If none remain, choose Screenshot source, confirm an available source and start Auto capture again. Screenshot failures do not stop video recording.</p>
+        <p>Changing screenshot sources while Auto capture is on restarts the capture interval with your new selection. If saving fails, automatic capture stops. Check the meeting folder's availability and free space, then start Auto capture again.</p>
         <p>Capturing screenshots saves images locally. To use selected images in AI chat or summaries, add them through Meeting context config.</p>
       </section>
       <section id="video-recording" class="guide-section">

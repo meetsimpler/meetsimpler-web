@@ -12,7 +12,9 @@ resolution, frame rate and quality. Screenshots and videos are organized by sour
 under visual_capture_data/screenshots and visual_capture_data/videos in each meeting folder.
 
 Automatic screenshot change detection reduces repeated images; manual captures
-always save. Keep records together
+always save. Automatic capture removes unavailable screenshot sources and continues
+with the remaining sources. Reselect a source and restart capture if none remain.
+Keep records together
 locally, organize screenshots by source, and name meeting folders from their
 transcript or with your own suffix. Configurable screenshot shortcuts, Escape
 and quick source selection help you work with fewer clicks.
