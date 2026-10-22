@@ -1,5 +1,10 @@
 export const byId = id => document.getElementById(id);
 
+export function restoreAuthFocus(control) {
+  if (control && document.activeElement === document.body &&
+      !control.disabled && control.getClientRects().length) control.focus();
+}
+
 function showFieldError(id, message) {
   byId(id).setAttribute('aria-invalid', 'true');
   const error = byId(id + '-error');

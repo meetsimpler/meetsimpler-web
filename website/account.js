@@ -1,5 +1,5 @@
 import {loadAuth, authData, authErrorMessage, providers, callbackError, accessRequest, createAuthOperations} from './auth-client.js';
-import {byId, clearFieldError, watchFieldValidation} from './auth-view.js';
+import {byId, clearFieldError, watchFieldValidation, restoreAuthFocus} from './auth-view.js';
 
 const status = byId('status');
 const operations = createAuthOperations();
@@ -50,6 +50,7 @@ function render(nextUser) {
 }
 async function run(action) {
   if (!ready || busy) return;
+  const focused = document.activeElement;
   busy = true; controls(true); status.textContent = 'Working...';
   try {await operations.run(action);}
   catch (error) {
@@ -57,7 +58,10 @@ async function run(action) {
     status.textContent = authErrorMessage(error, 'Unable to complete this request. Please try again.') +
       (operations.stopped ? ' Reload this page to try again.' : '');
   }
-  finally {busy = false; controls(!ready);}
+  finally {
+    busy = false; controls(!ready);
+    if (ready) restoreAuthFocus(focused);
+  }
 }
 function stopAuth() {
   ready = false;

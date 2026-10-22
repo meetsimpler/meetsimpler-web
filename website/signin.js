@@ -1,5 +1,5 @@
 import {loadAuth, authData, authErrorMessage, providers, callbackError, accessRequest, createAuthOperations} from './auth-client.js';
-import {showAuthResult, watchFieldValidation} from './auth-view.js';
+import {showAuthResult, watchFieldValidation, restoreAuthFocus} from './auth-view.js';
 const status=document.getElementById('status');
 const operations=createAuthOperations();
 watchFieldValidation('consent', 'Please accept the Terms first.');
@@ -79,6 +79,7 @@ try {
             }
             pair.accepted=false;sessionStorage.setItem(pairKey,JSON.stringify(pair));
             status.textContent=label+' sign-in could not start. Try again.';disableButtons(false);
+            restoreAuthFocus(document.getElementById(provider));
           }
         };
       }
