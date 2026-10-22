@@ -474,7 +474,6 @@
   "Sign in to connect this Windows app to your MeetSimpler account.": "サインインして、この Windows アプリを MeetSimpler アカウントに接続します。",
   "Sign in with your provider and approve the request. You will return to this page automatically.": "Google または GitHub アカウントにサインインしてリクエストを承認すると、このページに自動で戻ります。",
   "Sign-in could not be completed": "サインインを完了できませんでした",
-  "Sign-in could not load. Check your connection and reload this page.": "サインインを読み込めませんでした。接続を確認し、このページをリロードしてください。",
   "Sign-in expired. Start again from the Windows app.": "サインインの有効期限が切れました。 Windowsアプリからやり直してください。",
   "Sign-in methods": "サインイン方法",
   "Sign-in successful": "サインイン成功",
@@ -536,7 +535,6 @@
   "The installation folder contains the application files. The meeting parent folder for recordings and records is configured separately in MeetSimpler Settings.": "インストール先にはアプリケーションのファイルが保存されます。録音や会議記録を保存する会議の親フォルダーは、MeetSimplerの「設定」で別途指定します。",
   "The new passwords do not match.": "新しいパスワードが一致しません。",
   "The practice worked when you can see the expected speech in the transcript and, if AI is configured, receive a chat reply.": "この実践は、文字起こしで予想されるスピーチを確認でき、AI が設定されている場合はチャットの返信を受け取ることができれば機能しました。",
-  "The request timed out. Reload this page to try again.": "リクエストがタイムアウトになりました。もう一度試してみるには、このページをリロードしてください。",
   "The same controls work for lectures, podcasts, interviews and personal notes. The desktop app keeps its current meeting labels.": "同じ操作を、講義、ポッドキャスト、インタビュー、個人のノートにも使えます。デスクトップアプリの会議用ラベルはそのままです。",
   "The same interface also works for lectures, audio and video recordings, podcasts and personal notes. The meeting labels shown in these snapshots remain the same in the app.": "同じ画面を、講義、音声・動画の録音、ポッドキャスト、個人のノートにも使えます。画面例にある会議用ラベルは、アプリでも変更されません。",
   "The service is unavailable. Please try again.": "サービスは利用できません。もう一度試してください。",
@@ -812,5 +810,14 @@
   "Use {0} to begin and {1} to finish.": "開始するには「{0}」を、終了するには「{1}」を選択します。",
   "Select {0}. In its sidebar, check that {1} is enabled. Select {2} to change it to {3} if needed. This includes the meeting transcript in your chat request to the configured AI provider.": "「{0}」を開き、サイドバーで「{1}」が有効になっていることを確認します。必要に応じて「{2}」を押し、「{3}」に切り替えてください。これにより、設定した AI プロバイダーへのチャットリクエストに会議の文字起こしが含まれます。",
   "Your microphone captures your voice; it does not automatically capture the call's playback. Select a system or app output in Audio sources as well as your microphone, then Confirm. If the meeting app is missing, open it and start audio playback, then refresh the source picker.": "マイクは自分の声を収録しますが、通話の再生音は自動では収録しません。音声ソースでマイクに加えてシステムまたはアプリの出力を選び、確定してください。会議アプリが表示されない場合は、アプリを開いて音声を再生してからソース一覧を更新します。",
-  "For error details, open Settings → Other settings → Account and support → Open system log. Check the relevant entry or STT installation log before retrying. Keep API keys and private meeting content out of support messages.": "エラーの詳細は、設定 → その他の設定 → アカウントとサポート → システムログを開くで確認できます。再試行する前に、該当する記録や STT インストールログを確認してください。サポートへの問い合わせに API キーや非公開の会議内容を含めないでください。"
+  "For error details, open Settings → Other settings → Account and support → Open system log. Check the relevant entry or STT installation log before retrying. Keep API keys and private meeting content out of support messages.": "エラーの詳細は、設定 → その他の設定 → アカウントとサポート → システムログを開くで確認できます。再試行する前に、該当する記録や STT インストールログを確認してください。サポートへの問い合わせに API キーや非公開の会議内容を含めないでください。",
+  "The request timed out.": "リクエストがタイムアウトしました。",
+  "Sign-in could not load. Check your connection.": "ログイン機能を読み込めませんでした。接続を確認してください。",
+  "Manage your account": "アカウントの管理",
+  "Use the {0} to create an account or log in with email, Google or GitHub. Website sign-in is separate from desktop activation; start browser pairing from the Windows app when activating it.": "{0}でアカウントを作成するか、メール、Google、GitHub でログインできます。ウェブサイトへのログインとデスクトップの有効化は別です。有効化する際は Windows アプリからブラウザー連携を開始してください。",
+  "Forgot your password? On the account page, enter your email and use the Forgot password? button. Open the email link, enter a new password and select Save new password. After success, log in again. If recovery fails or times out, request a new link from the account page.": "パスワードを忘れた場合は、アカウントページにメールアドレスを入力し、パスワードを忘れた場合のボタンを選択します。メールのリンクを開き、新しいパスワードを入力して保存してください。成功後は再度ログインします。復旧に失敗したりタイムアウトしたりした場合は、アカウントページから新しいリンクをリクエストしてください。",
+  "For an email account, Change password asks for your current password and a matching new password entered twice. Google-only or GitHub-only accounts do not show this password form; manage those credentials with the sign-in provider.": "メールのアカウントでは、パスワード変更時に現在のパスワードと、二回入力した同じ新しいパスワードが必要です。Google または GitHub のみを利用するアカウントには、このフォームは表示されません。認証情報はログイン先のプロバイダーで管理してください。",
+  "Log out of this browser ends the current browser session. Log out on all devices ends account refresh sessions across devices. Existing desktop offline permits can remain valid until they expire; logging out does not remove local meeting files.": "このブラウザーからログアウトすると、現在のブラウザーのセッションが終了します。すべてのデバイスからログアウトすると、各デバイスのアカウント更新用セッションが終了します。既存のデスクトップ用オフライン許可は、有効期限まで利用できる場合があります。ログアウトしてもローカルの会議ファイルは削除されません。",
+  "To permanently delete your account, choose Delete my account, review the warning, type DELETE exactly and select Permanently delete my account. Cancel closes the confirmation without deleting anything. Account deletion cannot be undone; recordings and meeting files on your computer are kept.": "アカウントを完全に削除するには、アカウント削除を選択し、警告を確認して DELETE と正確に入力したうえで、完全に削除するボタンを押してください。キャンセルすると、何も削除せず確認画面を閉じます。アカウントの削除は取り消せません。コンピューター上の録音や会議ファイルは残ります。",
+  "If an account request times out and the controls remain disabled, reload the account page. For a desktop browser sign-in timeout, return to the Windows app and start sign-in again.": "アカウントのリクエストがタイムアウトし、操作できない状態が続く場合は、アカウントページを再読み込みしてください。デスクトップのブラウザーログインがタイムアウトした場合は、Windows アプリに戻ってログインをやり直してください。"
 }

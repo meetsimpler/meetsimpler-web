@@ -1,6 +1,8 @@
 import {request, timedFetch} from './http.js';
 import {validateAuthConfig} from './website-data.js';
 
+const timeoutMessage = 'The request timed out.';
+
 // One deadline per foreground operation. A timeout retires this page's client;
 // SDK retries may settle later, but cannot send requests or change its session.
 export function createAuthOperations() {
@@ -25,7 +27,7 @@ export function createAuthOperations() {
     async run(operation) {
       signal.throwIfAborted();
       const timer = setTimeout(() => {
-        const error = new Error('The request timed out. Reload this page to try again.');
+        const error = new Error(timeoutMessage);
         error.name = 'TimeoutError';
         controller.abort(error);
       }, 20000);
@@ -69,7 +71,7 @@ export function authErrorMessage(error, fallback) {
   if (Object.hasOwn(authMessages, error?.code)) return authMessages[error.code];
   if (error?.status === 429) return authMessages.over_request_rate_limit;
   if (error?.status >= 500) return 'The service is unavailable. Please try again.';
-  if (error?.name === 'TimeoutError') return 'The request timed out. Reload this page to try again.';
+  if (error?.name === 'TimeoutError') return timeoutMessage;
   if (error?.name === 'AuthRetryableFetchError' || error?.name === 'TypeError') {
     return 'Check your internet connection and try again.';
   }
@@ -99,7 +101,7 @@ export async function loadAuth(options, operations) {
     ({AuthClient} = await operations.call(() =>
       import('./vendor/supabase-auth.js')));
   } catch (_) {
-    throw new Error('Sign-in could not load. Check your connection and reload this page.');
+    throw new Error('Sign-in could not load. Check your connection.');
   }
   // Keep an expired operation from clearing or replacing persistent credentials.
   const storage = options.persistSession && (options.storage || localStorage);

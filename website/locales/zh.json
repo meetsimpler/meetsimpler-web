@@ -474,7 +474,6 @@
   "Sign in to connect this Windows app to your MeetSimpler account.": "登录以将此 Windows 应用连接到您的 MeetSimpler 账户。",
   "Sign in with your provider and approve the request. You will return to this page automatically.": "登录您的 Google 或 GitHub 账户并批准请求。您将自动返回此页面。",
   "Sign-in could not be completed": "无法完成登录",
-  "Sign-in could not load. Check your connection and reload this page.": "无法加载登录。请检查网络连接后重新加载此页面。",
   "Sign-in expired. Start again from the Windows app.": "登录已过期。请从 Windows 应用重新开始。",
   "Sign-in methods": "登录方式",
   "Sign-in successful": "登录成功",
@@ -536,7 +535,6 @@
   "The installation folder contains the application files. The meeting parent folder for recordings and records is configured separately in MeetSimpler Settings.": "安装文件夹存放应用程序文件。录音和会议记录的会议父文件夹，需要在 MeetSimpler 的“设置”中单独配置。",
   "The new passwords do not match.": "新密码不一致。",
   "The practice worked when you can see the expected speech in the transcript and, if AI is configured, receive a chat reply.": "如果转录中出现预期语音，且配置 AI 后能收到聊天回复，练习即成功。",
-  "The request timed out. Reload this page to try again.": "请求超时。重新加载此页面以重试。",
   "The same controls work for lectures, podcasts, interviews and personal notes. The desktop app keeps its current meeting labels.": "同样的控件也适用于讲座、播客、访谈和个人笔记。桌面应用保留现有的会议标签。",
   "The same interface also works for lectures, audio and video recordings, podcasts and personal notes. The meeting labels shown in these snapshots remain the same in the app.": "同样的界面也适用于讲座、音频和视频录制文件、播客和个人笔记。截图中显示的会议标签在应用中保持不变。",
   "The service is unavailable. Please try again.": "服务不可用。请重试。",
@@ -812,5 +810,14 @@
   "Use {0} to begin and {1} to finish.": "选择“{0}”开始，选择“{1}”结束。",
   "Select {0}. In its sidebar, check that {1} is enabled. Select {2} to change it to {3} if needed. This includes the meeting transcript in your chat request to the configured AI provider.": "选择“{0}”，并在侧栏确认已启用“{1}”。如有需要，选择“{2}”将其切换为“{3}”。这样，发送给所配置 AI 提供商的聊天请求就会包含会议转录。",
   "Your microphone captures your voice; it does not automatically capture the call's playback. Select a system or app output in Audio sources as well as your microphone, then Confirm. If the meeting app is missing, open it and start audio playback, then refresh the source picker.": "麦克风采集您的声音，不会自动采集通话播放的声音。在“音频源”中选择麦克风以及系统或应用输出，然后确认。如果会议应用未出现，请先打开应用并播放音频，再刷新来源选择器。",
-  "For error details, open Settings → Other settings → Account and support → Open system log. Check the relevant entry or STT installation log before retrying. Keep API keys and private meeting content out of support messages.": "查看错误详情，请打开“设置 → 其他设置 → 账户与支持 → 打开系统日志”。重试前检查相关记录或 STT 安装日志。联系支持时，请勿提供 API 密钥或私人会议内容。"
+  "For error details, open Settings → Other settings → Account and support → Open system log. Check the relevant entry or STT installation log before retrying. Keep API keys and private meeting content out of support messages.": "查看错误详情，请打开“设置 → 其他设置 → 账户与支持 → 打开系统日志”。重试前检查相关记录或 STT 安装日志。联系支持时，请勿提供 API 密钥或私人会议内容。",
+  "The request timed out.": "请求超时。",
+  "Sign-in could not load. Check your connection.": "无法加载登录功能，请检查网络连接。",
+  "Manage your account": "管理您的账户",
+  "Use the {0} to create an account or log in with email, Google or GitHub. Website sign-in is separate from desktop activation; start browser pairing from the Windows app when activating it.": "通过{0}注册账户，或使用邮箱、Google 或 GitHub 登录。网页登录与桌面激活分开进行；需要激活时，请从 Windows 应用发起浏览器配对。",
+  "Forgot your password? On the account page, enter your email and use the Forgot password? button. Open the email link, enter a new password and select Save new password. After success, log in again. If recovery fails or times out, request a new link from the account page.": "忘记密码？在账户页面输入邮箱，然后选择“忘记密码？”。打开邮件中的链接，输入新密码并选择“保存新密码”。成功后，请重新登录。如果恢复失败或超时，请从账户页面申请新链接。",
+  "For an email account, Change password asks for your current password and a matching new password entered twice. Google-only or GitHub-only accounts do not show this password form; manage those credentials with the sign-in provider.": "邮箱账户可通过“更改密码”输入当前密码，并输入两次一致的新密码。仅使用 Google 或 GitHub 的账户不会显示此密码表单；请在相应登录提供商处管理凭据。",
+  "Log out of this browser ends the current browser session. Log out on all devices ends account refresh sessions across devices. Existing desktop offline permits can remain valid until they expire; logging out does not remove local meeting files.": "“退出此浏览器”结束当前浏览器会话。“退出所有设备”结束各设备上的账户刷新会话。现有桌面离线许可在到期前仍可能有效；退出登录不会删除本地会议文件。",
+  "To permanently delete your account, choose Delete my account, review the warning, type DELETE exactly and select Permanently delete my account. Cancel closes the confirmation without deleting anything. Account deletion cannot be undone; recordings and meeting files on your computer are kept.": "如需永久删除账户，选择“删除我的账户”，阅读警告，准确输入 DELETE，再选择“永久删除我的账户”。“取消”只关闭确认界面，不会删除任何内容。账户删除后无法撤销；电脑上的录音和会议文件会保留。",
+  "If an account request times out and the controls remain disabled, reload the account page. For a desktop browser sign-in timeout, return to the Windows app and start sign-in again.": "如果账户请求超时且控件仍不可用，请重新加载账户页面。如果桌面应用的浏览器登录超时，请返回 Windows 应用重新发起登录。"
 }

@@ -474,7 +474,6 @@
   "Sign in to connect this Windows app to your MeetSimpler account.": "로그인하여 이 Windows 앱을 MeetSimpler 계정에 연결하세요.",
   "Sign in with your provider and approve the request. You will return to this page automatically.": "Google 또는 GitHub 계정에 로그인하고 요청을 승인하세요. 이 페이지로 자동으로 돌아옵니다.",
   "Sign-in could not be completed": "로그인을 완료할 수 없습니다.",
-  "Sign-in could not load. Check your connection and reload this page.": "로그인을 로드할 수 없습니다. 연결을 확인하고 이 페이지를 새로고침하세요.",
   "Sign-in expired. Start again from the Windows app.": "로그인이 만료되었습니다. Windows 앱에서 다시 시작하세요.",
   "Sign-in methods": "로그인 방법",
   "Sign-in successful": "로그인 성공",
@@ -536,7 +535,6 @@
   "The installation folder contains the application files. The meeting parent folder for recordings and records is configured separately in MeetSimpler Settings.": "설치 폴더에는 앱 파일이 저장됩니다. 녹음과 회의 기록을 보관하는 회의 상위 폴더는 MeetSimpler 설정에서 별도로 지정합니다.",
   "The new passwords do not match.": "새 비밀번호가 일치하지 않습니다.",
   "The practice worked when you can see the expected speech in the transcript and, if AI is configured, receive a chat reply.": "스크립트에서 예상되는 음성을 볼 수 있고 AI가 구성된 경우 채팅 응답을 받을 때 연습이 효과가 있었습니다.",
-  "The request timed out. Reload this page to try again.": "요청 시간이 초과되었습니다. 다시 시도하려면 이 페이지를 새로고침하세요.",
   "The same controls work for lectures, podcasts, interviews and personal notes. The desktop app keeps its current meeting labels.": "동일한 컨트롤을 강의, 팟캐스트, 인터뷰와 개인 메모에도 사용할 수 있습니다. 데스크톱 앱은 기존 회의 명칭을 유지합니다.",
   "The same interface also works for lectures, audio and video recordings, podcasts and personal notes. The meeting labels shown in these snapshots remain the same in the app.": "동일한 인터페이스를 강의, 오디오와 동영상 녹음, 팟캐스트와 개인 메모에도 사용할 수 있습니다. 스냅샷에 표시된 회의 명칭은 앱에서도 그대로 유지됩니다.",
   "The service is unavailable. Please try again.": "서비스를 이용할 수 없습니다. 다시 시도해 주세요.",
@@ -812,5 +810,14 @@
   "Use {0} to begin and {1} to finish.": "시작하려면 {0} 버튼을, 마치려면 {1} 버튼을 선택하세요.",
   "Select {0}. In its sidebar, check that {1} is enabled. Select {2} to change it to {3} if needed. This includes the meeting transcript in your chat request to the configured AI provider.": "{0}을 열고 사이드바에서 {1}이 활성화되어 있는지 확인하세요. 필요하면 {2}를 눌러 {3}으로 전환하세요. 그러면 설정한 AI 제공업체에 보내는 채팅 요청에 회의 전사가 포함됩니다.",
   "Your microphone captures your voice; it does not automatically capture the call's playback. Select a system or app output in Audio sources as well as your microphone, then Confirm. If the meeting app is missing, open it and start audio playback, then refresh the source picker.": "마이크는 자신의 목소리를 캡처하며 통화에서 재생되는 소리는 자동으로 캡처하지 않습니다. 오디오 소스에서 마이크와 함께 시스템 또는 앱 출력을 선택하고 확인을 누르세요. 회의 앱이 없으면 앱을 열어 오디오를 재생한 뒤 소스 목록을 새로 고치세요.",
-  "For error details, open Settings → Other settings → Account and support → Open system log. Check the relevant entry or STT installation log before retrying. Keep API keys and private meeting content out of support messages.": "오류의 자세한 내용은 설정 → 기타 설정 → 계정 및 지원 → 시스템 로그 열기에서 확인하세요. 다시 시도하기 전에 해당 항목이나 STT 설치 로그를 확인하세요. 지원 문의에는 API 키나 비공개 회의 내용을 포함하지 마세요."
+  "For error details, open Settings → Other settings → Account and support → Open system log. Check the relevant entry or STT installation log before retrying. Keep API keys and private meeting content out of support messages.": "오류의 자세한 내용은 설정 → 기타 설정 → 계정 및 지원 → 시스템 로그 열기에서 확인하세요. 다시 시도하기 전에 해당 항목이나 STT 설치 로그를 확인하세요. 지원 문의에는 API 키나 비공개 회의 내용을 포함하지 마세요.",
+  "The request timed out.": "요청 시간이 초과되었습니다.",
+  "Sign-in could not load. Check your connection.": "로그인 기능을 불러오지 못했습니다. 인터넷 연결을 확인하세요.",
+  "Manage your account": "계정 관리",
+  "Use the {0} to create an account or log in with email, Google or GitHub. Website sign-in is separate from desktop activation; start browser pairing from the Windows app when activating it.": "{0}에서 계정을 만들거나 이메일, Google 또는 GitHub로 로그인할 수 있습니다. 웹사이트 로그인과 데스크톱 활성화는 별개입니다. 활성화하려면 Windows 앱에서 브라우저 연결을 시작하세요.",
+  "Forgot your password? On the account page, enter your email and use the Forgot password? button. Open the email link, enter a new password and select Save new password. After success, log in again. If recovery fails or times out, request a new link from the account page.": "비밀번호를 잊으셨나요? 계정 페이지에서 이메일을 입력하고 비밀번호 찾기를 선택하세요. 이메일의 링크를 열고 새 비밀번호를 입력한 다음 새 비밀번호 저장을 누르세요. 성공하면 다시 로그인하세요. 복구에 실패하거나 시간이 초과되면 계정 페이지에서 새 링크를 요청하세요.",
+  "For an email account, Change password asks for your current password and a matching new password entered twice. Google-only or GitHub-only accounts do not show this password form; manage those credentials with the sign-in provider.": "이메일 계정의 비밀번호 변경에서는 현재 비밀번호와 동일하게 두 번 입력한 새 비밀번호가 필요합니다. Google 또는 GitHub로만 로그인하는 계정에는 이 양식이 표시되지 않습니다. 해당 로그인 제공업체에서 비밀번호를 관리하세요.",
+  "Log out of this browser ends the current browser session. Log out on all devices ends account refresh sessions across devices. Existing desktop offline permits can remain valid until they expire; logging out does not remove local meeting files.": "이 브라우저에서 로그아웃은 현재 브라우저 세션을 종료합니다. 모든 기기에서 로그아웃은 각 기기의 계정 갱신 세션을 종료합니다. 기존 데스크톱 오프라인 허가는 만료될 때까지 유효할 수 있으며, 로그아웃해도 로컬 회의 파일은 삭제되지 않습니다.",
+  "To permanently delete your account, choose Delete my account, review the warning, type DELETE exactly and select Permanently delete my account. Cancel closes the confirmation without deleting anything. Account deletion cannot be undone; recordings and meeting files on your computer are kept.": "계정을 영구 삭제하려면 내 계정 삭제를 선택하고 경고를 확인한 뒤 DELETE를 정확히 입력하고 내 계정 영구 삭제를 누르세요. 취소는 아무것도 삭제하지 않고 확인 화면을 닫습니다. 계정 삭제는 되돌릴 수 없으며 컴퓨터의 녹음과 회의 파일은 유지됩니다.",
+  "If an account request times out and the controls remain disabled, reload the account page. For a desktop browser sign-in timeout, return to the Windows app and start sign-in again.": "계정 요청 시간이 초과되고 컨트롤이 계속 비활성화되어 있으면 계정 페이지를 새로 고치세요. 데스크톱 브라우저 로그인 시간이 초과되면 Windows 앱으로 돌아가 로그인을 다시 시작하세요."
 }

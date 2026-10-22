@@ -53,7 +53,8 @@ async function run(action) {
   try {await operations.run(action);}
   catch (error) {
     if (operations.stopped) stopAuth();
-    status.textContent = authErrorMessage(error, 'Unable to complete this request. Please try again.');
+    status.textContent = authErrorMessage(error, 'Unable to complete this request. Please try again.') +
+      (operations.stopped ? ' Reload this page to try again.' : '');
   }
   finally {busy = false; controls(!ready);}
 }
@@ -171,6 +172,6 @@ try {
 } catch (error) {
   stopAuth();
   history.replaceState(null, '', location.pathname);
-  status.textContent = authErrorMessage(error, 'Account could not load.') + (operations.stopped ? '' : ' Reload this page to try again.');
+  status.textContent = authErrorMessage(error, 'Account could not load.') + ' Reload this page to try again.';
   controls(true);
 }
