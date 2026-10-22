@@ -33,6 +33,13 @@ questions and replies form foldable blocks. Cancel stops an individual request;
 Update regenerates its answer with the submitted attachments. Remove deletes
 that question and reply from the conversation while keeping local attachment files.
 
+Dictate chat messages with local speech recognition and configurable voice commands.
+Automatic sending defaults to a 1.5-second pause. To review drafts before sending,
+turn off both automatic sending and voice commands. The microphone keeps listening
+until you stop voice input.
+See the [voice input guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#voice-input)
+for setup and the effect on meeting microphone capture.
+
 Speech recognition runs locally on your PC. AI translation, chat and summaries use
 your chosen provider, with your own credentials; provider charges may apply.
 
