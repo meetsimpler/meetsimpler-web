@@ -16,7 +16,8 @@ always save. Automatic capture removes unavailable screenshot sources and contin
 with the remaining sources. Reselect a source and restart capture if none remain.
 Keep records together
 locally, organize screenshots by source, and name meeting folders from their
-transcript or with your own suffix. Configurable screenshot shortcuts, Escape
+transcript or with your own suffix. AI naming suggestions keep the meeting running;
+confirming a rename stops and saves it. Configurable screenshot shortcuts, Escape
 and quick source selection help you work with fewer clicks.
 
 The Analysis workspace combines live translation and chunk summaries with
