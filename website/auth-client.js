@@ -69,7 +69,10 @@ export function authErrorMessage(error, fallback) {
   if (Object.hasOwn(authMessages, error?.code)) return authMessages[error.code];
   if (error?.status === 429) return authMessages.over_request_rate_limit;
   if (error?.status >= 500) return 'The service is unavailable. Please try again.';
-  if (error?.name === 'AuthRetryableFetchError') return 'Check your internet connection and try again.';
+  if (error?.name === 'TimeoutError') return 'The request timed out. Reload this page to try again.';
+  if (error?.name === 'AuthRetryableFetchError' || error?.name === 'TypeError') {
+    return 'Check your internet connection and try again.';
+  }
   return error?.message || fallback;
 }
 
@@ -79,8 +82,12 @@ export async function accessRequest(config, action, body, token, signal) {
       apikey: config.supabase.publishableKey, Authorization: 'Bearer ' + token},
     body: JSON.stringify(body), signal,
   });
-  if (response.status === 403) throw new Error('Account access was denied. Please sign in again.');
-  if (!response.ok) throw new Error('The service is unavailable. Please try again.');
+  if (!response.ok) {
+    const message = response.status === 401 ? 'Your session has expired. Please log in again.'
+      : response.status === 403 ? 'Account access was denied. Please sign in again.'
+      : 'The service is unavailable. Please try again.';
+    throw Object.assign(new Error(message), {status: response.status});
+  }
   return response;
 }
 

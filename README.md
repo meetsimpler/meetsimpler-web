@@ -26,7 +26,10 @@ paused so you control when requests begin.
 Timed summaries in the main window follow each new time span. Timed and chunk
 summaries can use earlier blocks and a running memory for continuity. Review the
 memory and its evidence ranges, and edit it when needed. Selection menus can send
-text or a whole folded block to AI chat for explanations or summaries.
+text or a whole folded block to AI chat for explanations or summaries. Chat
+questions and replies form foldable blocks. Cancel stops an individual request;
+Update regenerates its answer with the submitted attachments. Remove deletes
+that question and reply from the conversation while keeping local attachment files.
 
 Speech recognition runs locally on your PC. AI translation, chat and summaries use
 your chosen provider, with your own credentials; provider charges may apply.
