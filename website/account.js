@@ -45,6 +45,7 @@ function render(nextUser) {
       input.value = ''; clearFieldError(input.id);
     });
     showDeletionConfirmation(false);
+    if (ready) byId(user ? 'account-title' : 'auth-title').focus();
   }
 }
 async function run(action) {
@@ -129,6 +130,7 @@ byId('delete-account').onsubmit = event => {
     byId('guest').hidden = true;
     byId('deleted-account').hidden = false;
     status.textContent = 'Your account has been permanently deleted. Meeting files on your computer have been kept.';
+    byId('deleted-account-title').focus();
   });
 };
 byId('change-password').onsubmit = event => {
