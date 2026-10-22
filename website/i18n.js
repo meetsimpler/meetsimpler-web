@@ -80,7 +80,7 @@ function startTranslation(document, storage, catalogLoader) {
   function render() {
     observer.disconnect();
     heading.textContent = translate('Language selection:');
-    // Translate whole sentences so each language can place linked terms naturally.
+    // Translate whole sentences while preserving links and emphasized labels.
     for (const element of document.querySelectorAll('[data-i18n-template]')) {
       let record = richText.get(element);
       if (!record) {
