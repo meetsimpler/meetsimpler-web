@@ -66,6 +66,10 @@
         <p>To resolve an input-budget error, choose a shorter transcript time range or disable unneeded text context. Increase the budget only if your selected model can accept the request. Provider limits still apply to both text and media.</p>
         <p>Request timeout defaults to 180 seconds and includes provider queueing, request processing and returned files. If a request times out, check the provider status and request size before retrying, or adjust the timeout in Detailed config. Use Cancel on a chat block to stop that request.</p>
         <p>Use provider default output length sends no app output limit; provider limits and credit requirements still apply. To set a smaller response limit, turn that option off and enter Maximum output tokens. Run Test connection, then Save.</p>
+        <h3 id="ai-request-details">Inspect AI request details</h3>
+        <p>In the dashboard's AI Model Status panel, select a request row, or focus it and press Enter, to open AI request structure. Review the model, message roles, input types, source filenames and enabled tools.</p>
+        <p>The details show the most recent prepared provider request, without message text or credentials. Opening the window does not send another AI request. If the request is still being prepared, the details update when its structure becomes available.</p>
+        <p>Use the request status and its answer or error to check the outcome. The structure window shows prepared inputs; it can still show them when a request fails or is cancelled.</p>
       </section>
       <section id="voice-input" class="guide-section">
         <h2>Chat voice input</h2>

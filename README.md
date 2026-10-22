@@ -34,6 +34,10 @@ questions and replies form foldable blocks. Cancel stops an individual request;
 Update regenerates its answer with the submitted attachments. Remove deletes
 that question and reply from the conversation while keeping local attachment files.
 
+In AI Model Status, select a request row to inspect its prepared model, input
+types and source filenames without displaying message text or credentials.
+Check the request status and answer or error separately to confirm its outcome.
+
 Dictate chat messages with local speech recognition and configurable voice commands.
 Automatic sending defaults to a 1.5-second pause. To review drafts before sending,
 turn off both automatic sending and voice commands. The microphone keeps listening
