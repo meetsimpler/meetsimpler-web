@@ -52,10 +52,29 @@ Check one configuration to use it for chat, summaries and script generation;
 specialist local translation is selected separately. General local AI requires
 a supported NVIDIA or AMD GPU; specialist local translation can use CPU.
 
+The built-in local AI catalogue includes Qwen and Gemma models for chat,
+summaries and script generation. HY-MT1.5 and TranslateGemma provide separately
+selected specialist translation. The
+[local AI guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#local-ai)
+explains setup and the current model-picker limits, including DeepSeek availability.
+
 Turn a draft or meeting notes into local speech, or create narrated slide videos
 with optional mouse highlights. Review scripts, choose a voice and language,
 then find audio and MP4 outputs in Results. See the
 [speech generation guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#speech-generation).
+
+Local speech choices include Qwen3-TTS CustomVoice and Base (0.6B/1.7B),
+Kokoro-82M, VoxCPM2, CosyVoice 3, Chatterbox Multilingual V3 and Chatterbox Turbo.
+Choose built-in voices or supported reference-voice options, then review the
+language, device and reference requirements before generating. TTS models are
+installed separately from speech recognition and general AI models.
+
+Import PDF, PowerPoint or slide images, prepare narration per slide and generate
+its audio. Add optional mouse highlights, then export a narrated MP4 with your
+chosen resolution, frame rate, quality and pauses. PowerPoint conversion
+requires LibreOffice. See the
+[model introduction](https://meetsimpler.github.io/meetsimpler-web/#tts-models)
+and [presentation video guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#presentation-video).
 
 Online profiles send enabled content to your chosen provider and need your own
 API credentials; charges may apply. Local AI runs through installed Ollama
