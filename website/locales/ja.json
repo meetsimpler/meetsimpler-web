@@ -855,5 +855,14 @@
   "The built-in general AI catalogue includes Qwen and Gemma models for chat, summaries and script generation. HY-MT1.5 and TranslateGemma are specialist translation choices, selected separately.": "汎用 AI の内蔵カタログには、チャット、要約、原稿生成に使える Qwen と Gemma があります。HY-MT1.5 と TranslateGemma は別途選択する翻訳専用モデルです。",
   "Create speech and video": "音声と動画を作る",
   "Explore TTS models": "TTS モデルを見る",
-  "Explore local AI": "ローカル AI を見る"
+  "Explore local AI": "ローカル AI を見る",
+  "Tencent's translation-focused family. MeetSimpler offers 1.8B and 7B models; 1.8B is the app's lightweight choice for live translation. HY-MT can use preceding transcript context.": "Tencent の翻訳専用モデル群です。MeetSimpler では 1.8B と 7B を利用でき、1.8B はライブ翻訳向けの軽量な選択肢です。HY-MT は直前の文字起こしを文脈として利用できます。",
+  "Google's translation-focused Gemma family. MeetSimpler offers 4B and 12B variants. TranslateGemma translates each speech segment independently, with language-pair coverage determined by the model.": "Google の翻訳専用 Gemma モデル群です。MeetSimpler では 4B と 12B を利用できます。TranslateGemma は各発話区間を独立して翻訳し、対応する言語ペアはモデルによって決まります。",
+  "Choose a local translator": "ローカル翻訳モデルを選ぶ",
+  "Use a specialist translator for live transcript translation or selected-text and time-range translation. Chat, summaries and script generation continue to use the active AI profile.": "専用の翻訳モデルで、ライブ文字起こし、選択したテキスト、指定した時間範囲を翻訳できます。チャット、要約、原稿生成には引き続き使用中の AI 設定を使います。",
+  "In Settings → AI features, open Install and manage local AI models. Install or start Ollama and install the translation model you want.": "設定 → AI 機能からローカル AI モデルのインストールと管理を開きます。Ollama をインストールまたは起動し、利用したい翻訳モデルをインストールします。",
+  "In Settings → Local translation models, choose the installed specialist model. This selection is independent of AI provider config; it does not replace your chat or summary model.": "設定 → ローカル翻訳モデルで、インストール済みの専用モデルを選択します。AI プロバイダー設定とは独立した選択で、チャットや要約のモデルは変わりません。",
+  "Open Detailed analysis, choose the target language and enable Translation or request analysis of selected text or a time range. Review the result against the source transcript.": "詳細分析で対象言語を選び、翻訳を有効にするか、選択テキストや時間範囲の分析を依頼します。元の文字起こしと照らし合わせて結果を確認してください。",
+  "Specialist translation runs locally on CPU or supported GPU hardware and needs no online provider API key. Model downloads and account activation still need internet access. Supported language pairs depend on the chosen model.": "専用の翻訳は CPU または対応する GPU でローカルに実行し、オンラインプロバイダーの API キーは不要です。モデルのダウンロードとアカウントの有効化にはインターネット接続が必要です。対応言語ペアは選択したモデルによって異なります。",
+  "Compare local translation models": "ローカル翻訳モデルを比較"
 }

@@ -855,5 +855,14 @@
   "The built-in general AI catalogue includes Qwen and Gemma models for chat, summaries and script generation. HY-MT1.5 and TranslateGemma are specialist translation choices, selected separately.": "內建通用 AI 目錄包含 Qwen 和 Gemma 模型，可用於聊天、摘要和講稿產生。HY-MT1.5 和 TranslateGemma 是單獨選擇的專用翻譯模型。",
   "Create speech and video": "製作語音與影片",
   "Explore TTS models": "瞭解 TTS 模型",
-  "Explore local AI": "瞭解本機 AI"
+  "Explore local AI": "瞭解本機 AI",
+  "Tencent's translation-focused family. MeetSimpler offers 1.8B and 7B models; 1.8B is the app's lightweight choice for live translation. HY-MT can use preceding transcript context.": "騰訊專注翻譯的模型系列。MeetSimpler 提供 1.8B 和 7B 模型，其中 1.8B 是應用程式中適合即時翻譯的輕量選擇。HY-MT 可使用前文轉寫作為上下文。",
+  "Google's translation-focused Gemma family. MeetSimpler offers 4B and 12B variants. TranslateGemma translates each speech segment independently, with language-pair coverage determined by the model.": "Google 專注翻譯的 Gemma 系列。MeetSimpler 提供 4B 和 12B 版本。TranslateGemma 獨立翻譯每個語音片段，支援的語言配對由模型決定。",
+  "Choose a local translator": "選擇本機翻譯模型",
+  "Use a specialist translator for live transcript translation or selected-text and time-range translation. Chat, summaries and script generation continue to use the active AI profile.": "使用專用翻譯模型翻譯即時轉寫、選取文字或指定時間範圍的內容。聊天、摘要和講稿產生繼續使用目前啟用的 AI 設定。",
+  "In Settings → AI features, open Install and manage local AI models. Install or start Ollama and install the translation model you want.": "在設定 → AI 功能中開啟安裝與管理本機 AI 模型。安裝或啟動 Ollama，然後安裝所需的翻譯模型。",
+  "In Settings → Local translation models, choose the installed specialist model. This selection is independent of AI provider config; it does not replace your chat or summary model.": "在設定 → 本機翻譯模型中選擇已安裝的專用模型。此選擇獨立於 AI 供應商設定，不會取代聊天或摘要模型。",
+  "Open Detailed analysis, choose the target language and enable Translation or request analysis of selected text or a time range. Review the result against the source transcript.": "開啟詳細分析，選擇目標語言並啟用翻譯，或對選取文字或時間範圍請求分析。對照來源轉寫檢查結果。",
+  "Specialist translation runs locally on CPU or supported GPU hardware and needs no online provider API key. Model downloads and account activation still need internet access. Supported language pairs depend on the chosen model.": "專用翻譯在本機 CPU 或受支援的 GPU 上執行，無需線上供應商 API 金鑰。模型下載和帳戶啟用仍需連網。支援的語言配對取決於所選模型。",
+  "Compare local translation models": "比較本機翻譯模型"
 }

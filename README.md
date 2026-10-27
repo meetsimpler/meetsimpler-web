@@ -54,7 +54,11 @@ a supported NVIDIA or AMD GPU; specialist local translation can use CPU.
 
 The built-in local AI catalogue includes Qwen and Gemma models for chat,
 summaries and script generation. HY-MT1.5 and TranslateGemma provide separately
-selected specialist translation. The
+selected specialist translation. HY-MT1.5 is available in 1.8B and 7B variants;
+TranslateGemma in 4B and 12B. These translators run locally, including on CPU,
+and need no online provider API key. Select them separately under Local translation
+models. See the [translation model introduction](https://meetsimpler.github.io/meetsimpler-web/#local-translation).
+The
 [local AI guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#local-ai)
 explains setup and the current model-picker limits, including DeepSeek availability.
 
