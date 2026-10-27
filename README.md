@@ -23,12 +23,14 @@ and quick source selection help you work with fewer clicks.
 The Analysis workspace combines live translation and chunk summaries with
 selective analysis of highlighted text, a time range or the full transcript.
 Choose a target language and enable Summary, Translation or both. Fold blocks,
-inspect their Source, or use Update to regenerate a result. Live analysis starts
-paused so you control when requests begin.
+inspect their Source, or use Update to regenerate a result. The dashboard and
+Detailed analysis share the same results and controls. Translation offers On,
+Off and Auto detection.
 
-Timed summaries in the main window follow each new time span. Timed and chunk
-summaries can use earlier blocks and a running memory for continuity. Review the
-memory and its evidence ranges, and edit it when needed. Selection menus can send
+Summary: On summarizes completed transcript chunks; the growing chunk waits
+until it closes. Choose how much detail summaries include and use earlier
+summaries or running meeting memory for continuity. Review the memory's key
+points and evidence ranges when needed. Selection menus can send
 text or a whole folded block to AI chat for explanations or summaries. Chat
 questions and replies form foldable blocks. Cancel stops an individual request;
 Update regenerates its answer with the submitted attachments. Remove deletes
@@ -45,8 +47,19 @@ until you stop voice input.
 See the [voice input guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#voice-input)
 for setup and the effect on meeting microphone capture.
 
-Speech recognition runs locally on your PC. AI translation, chat and summaries use
-your chosen provider, with your own credentials; provider charges may apply.
+Save online API connections and installed local models in AI provider config.
+Check one configuration to use it for chat, summaries and script generation;
+specialist local translation is selected separately. General local AI requires
+a supported NVIDIA or AMD GPU; specialist local translation can use CPU.
+
+Turn a draft or meeting notes into local speech, or create narrated slide videos
+with optional mouse highlights. Review scripts, choose a voice and language,
+then find audio and MP4 outputs in Results. See the
+[speech generation guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#speech-generation).
+
+Online profiles send enabled content to your chosen provider and need your own
+API credentials; charges may apply. Local AI runs through installed Ollama
+models. Account activation and renewal remain separate from either AI choice.
 
 - [Official website](https://meetsimpler.github.io/meetsimpler-web/)
 - [Windows downloads](https://github.com/meetsimpler/meetsimpler-releases/releases)
