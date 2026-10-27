@@ -7,6 +7,10 @@ export function normalizeLanguage(value) {
   if (code === 'zh' && parts.some(part => ['hant', 'tw', 'hk', 'mo'].includes(part))) return 'zh-Hant';
   return Object.hasOwn(languages, code) ? code : 'en';
 }
+export function snapshotPath(source, locale) {
+  const language = normalizeLanguage(locale);
+  return language === 'en' ? source : source.replace(/\.webp$/, `.${language}.webp`);
+}
 const htmlLanguage = code => code === 'zh' ? 'zh-Hans' : code;
 let currentLanguage = 'en';
 const catalogs = new Map();
@@ -123,7 +127,7 @@ function startTranslation(document, storage, catalogLoader) {
     }
     for (const snapshot of document.querySelectorAll('img[data-localized-snapshot]')) {
       const source = snapshot.dataset.localizedSnapshot;
-      const path = currentLanguage === 'en' ? source : source.replace(/\.webp$/, `.${currentLanguage}.webp`);
+      const path = snapshotPath(source, currentLanguage);
       if (snapshot.getAttribute('src') !== path) snapshot.setAttribute('src', path);
       const link = snapshot.closest('a');
       if (link && link.getAttribute('href') !== path) link.setAttribute('href', path);
