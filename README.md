@@ -63,9 +63,16 @@ The
 explains setup and the current model-picker limits, including DeepSeek availability.
 
 Turn a draft or meeting notes into local speech, or create narrated slide videos
-with optional mouse highlights. Review scripts, choose a voice and language,
+with optional pointer highlights. Review scripts, choose a voice and language,
 then find audio and MP4 outputs in Results. See the
 [speech generation guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#speech-generation).
+
+Choose a shared script style for meeting narration and slide scripts, or save
+your own instructions. Slide AI generation supports ranges, sequential batches,
+optional surrounding context and a separate AI verifier. Retry only failed
+slides while keeping successful results. See the
+[script styles guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#script-styles)
+and [slide script guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#slide-scripts).
 
 Local speech choices include Qwen3-TTS CustomVoice and Base (0.6B/1.7B),
 Kokoro-82M, VoxCPM2, CosyVoice 3, Chatterbox Multilingual V3 and Chatterbox Turbo.
@@ -74,12 +81,12 @@ language, device and reference requirements before generating. TTS models are
 installed separately from speech recognition and general AI models.
 
 Import PDF, PowerPoint or slide images, prepare narration per slide and generate
-its audio. Add optional mouse highlights, then export a narrated MP4 with your
+its audio. Add optional pointer highlights, then export a narrated MP4 with your
 chosen resolution, frame rate, quality and pauses. PowerPoint conversion
 requires LibreOffice. See the
 [model introduction](https://meetsimpler.github.io/meetsimpler-web/#tts-models)
 and [presentation video guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#presentation-video).
-Preview individual mouse highlights or a full slide with seeking, zoom and
+Preview individual pointer highlights or a full slide with seeking, zoom and
 adjustable playback speed before exporting your video. See the
 [playback snapshot](https://meetsimpler.github.io/meetsimpler-web/showcase.html#playback)
 and [model installation guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#model-installation).
