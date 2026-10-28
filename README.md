@@ -79,6 +79,10 @@ chosen resolution, frame rate, quality and pauses. PowerPoint conversion
 requires LibreOffice. See the
 [model introduction](https://meetsimpler.github.io/meetsimpler-web/#tts-models)
 and [presentation video guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#presentation-video).
+Preview individual mouse highlights or a full slide with seeking, zoom and
+adjustable playback speed before exporting your video. See the
+[playback snapshot](https://meetsimpler.github.io/meetsimpler-web/showcase.html#playback)
+and [model installation guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#model-installation).
 
 Online profiles send enabled content to your chosen provider and need your own
 API credentials; charges may apply. Local AI runs through installed Ollama
