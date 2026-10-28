@@ -14,6 +14,7 @@ header a{white-space:nowrap}
 .hero-heading{display:flex;align-items:center;justify-content:center;gap:32px;margin:25px 0}
 .hero-logo{display:block;width:clamp(160px,20vw,220px);height:auto;flex-shrink:0}
 .hero-heading h1{min-width:0;margin:0;text-align:left}
+.hero .download-note{margin-bottom:0}.hero #release-status{margin-top:8px}
 @media(max-width:700px){.hero-heading{flex-direction:column;gap:24px}.hero-logo{width:140px}.hero-heading h1{text-align:center}}
 
 /* Put validation feedback beside the field that needs attention. */

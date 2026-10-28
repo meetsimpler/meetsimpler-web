@@ -85,7 +85,7 @@ API credentials; charges may apply. Local AI runs through installed Ollama
 models. Account activation and renewal remain separate from either AI choice.
 
 - [Official website](https://meetsimpler.github.io/meetsimpler-web/)
-- [Windows downloads](https://github.com/meetsimpler/meetsimpler-releases/releases)
+- [Windows downloads](https://github.com/meetsimpler/meetsimpler-releases/releases) — choose the installer EXE or portable ZIP under Assets
 - [Getting started](https://meetsimpler.github.io/meetsimpler-web/getting-started.html)
 - [Terms and privacy](https://meetsimpler.github.io/meetsimpler-web/legal/)
 
