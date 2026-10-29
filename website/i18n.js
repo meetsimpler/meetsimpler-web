@@ -4,7 +4,10 @@ const storageKey = 'meetsimpler-language';
 export const languages = {en: 'English', zh: '简体中文', 'zh-Hant': '繁體中文', ko: '한국어', ja: '日本語'};
 export function normalizeLanguage(value) {
   const [code, ...parts] = String(value || '').trim().toLowerCase().split(/[-_]/);
-  if (code === 'zh' && parts.some(part => ['hant', 'tw', 'hk', 'mo'].includes(part))) return 'zh-Hant';
+  if (code === 'zh') {
+    const script = parts.find(part => part === 'hans' || part === 'hant');
+    if (script === 'hant' || !script && parts.some(part => ['tw', 'hk', 'mo'].includes(part))) return 'zh-Hant';
+  }
   return Object.hasOwn(languages, code) ? code : 'en';
 }
 export function snapshotPath(source, locale) {
