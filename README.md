@@ -36,7 +36,8 @@ questions and replies form foldable blocks. Cancel stops an individual request;
 Update regenerates its answer with the submitted attachments. Remove deletes
 that question and reply from the conversation while keeping local attachment files.
 
-In AI Model Status, select a request row to inspect its prepared model, input
+Open AI model calls from Speech generation, or use AI Model Status on the
+dashboard. Select a request row to inspect its prepared model, input
 types and source filenames without displaying message text or credentials.
 Check the request status and answer or error separately to confirm its outcome.
 
@@ -73,6 +74,13 @@ optional surrounding context and a separate AI verifier. Retry only failed
 slides while keeping successful results. See the
 [script styles guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#script-styles)
 and [slide script guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#slide-scripts).
+
+Movement styles controls pointer motion separately from pointer appearance.
+Choose a preset or save your own instructions. Fine timing uses saved synthesis
+chunks, with editable segments inside fixed chunk boundaries. The aligner duration
+limit is separate from speech generation. See the
+[movement styles guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#movement-styles)
+and [fine timing guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#fine-timing).
 
 Local speech choices include Qwen3-TTS CustomVoice and Base (0.6B/1.7B),
 Kokoro-82M, VoxCPM2, CosyVoice 3, Chatterbox Multilingual V3 and Chatterbox Turbo.

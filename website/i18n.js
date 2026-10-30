@@ -55,6 +55,18 @@ export function translate(source, locale = currentLanguage) {
 function startTranslation(document, storage, catalogLoader) {
   const originalText = new WeakMap(), originalAttributes = new WeakMap();
   const richText = new WeakMap();
+  const snapshots = document.querySelectorAll('img[data-localized-snapshot]');
+  // Localized desktop windows can have different minimum sizes.
+  for (const snapshot of snapshots) {
+    const updateSize = () => {
+      if (snapshot.complete && snapshot.naturalWidth) {
+        snapshot.width = snapshot.naturalWidth;
+        snapshot.height = snapshot.naturalHeight;
+      }
+    };
+    snapshot.addEventListener('load', updateSize);
+    updateSize();
+  }
   let requested = 'en';
   const loading = new Map();
   try {requested = normalizeLanguage(storage.getItem(storageKey));} catch (_) { /* Browser storage is optional. */ }
@@ -128,7 +140,7 @@ function startTranslation(document, storage, catalogLoader) {
       }
       originalAttributes.set(element, records);
     }
-    for (const snapshot of document.querySelectorAll('img[data-localized-snapshot]')) {
+    for (const snapshot of snapshots) {
       const source = snapshot.dataset.localizedSnapshot;
       const path = snapshotPath(source, currentLanguage);
       if (snapshot.getAttribute('src') !== path) snapshot.setAttribute('src', path);
