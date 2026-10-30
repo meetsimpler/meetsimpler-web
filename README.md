@@ -26,6 +26,10 @@ Choose a target language and enable Summary, Translation or both. Fold blocks,
 inspect their Source, or use Update to regenerate a result. The dashboard and
 Detailed analysis share the same results and controls. Translation offers On,
 Off and Auto detection.
+Completed translations and usable summaries remain available when another block
+fails. Read its error and use Update to retry after correcting the cause; failed
+blocks are not automatically resubmitted. Analysis links navigate to matching
+results and can submit analysis when the destination block is empty.
 
 Summary: On summarizes completed transcript chunks; the growing chunk waits
 until it closes. Choose how much detail summaries include and use earlier
