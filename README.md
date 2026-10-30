@@ -37,9 +37,12 @@ Update regenerates its answer with the submitted attachments. Remove deletes
 that question and reply from the conversation while keeping local attachment files.
 
 Open AI model calls from Speech generation, or use AI Model Status on the
-dashboard. Select a request row to inspect its prepared model, input
-types and source filenames without displaying message text or credentials.
-Check the request status and answer or error separately to confirm its outcome.
+dashboard. Select a request row to inspect its prepared model, messages and
+named inputs. View details opens captured text and local files; JSON has formatted
+and source views. Provider credentials are excluded from the inspection snapshot.
+Slide generation and verification have separate call entries. A completed call
+means a response arrived; check the generation result for saved or rejected slides.
+See the [request inspection guide](https://meetsimpler.github.io/meetsimpler-web/getting-started.html#ai-request-details).
 
 Dictate chat messages with local speech recognition and configurable voice commands.
 Automatic sending defaults to a 1.5-second pause. To review drafts before sending,
